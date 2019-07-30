@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jquery Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+   
+
+<style type="text/css">
+	
+	.neat {
+		background-color: #ccc;
+	}
+
+	.red-border{
+		border: 2px solid #f00;
+	}
+
+</style>
+
+</head>
+
+<body >
+
+<div class="jumbotron text-center">
+  <h1 class="text-info">My Jquery Page</h1>
+  <p>Boostrap !</p> 
+</div>
+   
+ 	<div class="container">
+
+
+ 		<p class="neat" style="display: none">
+ 			passages were popularized on Letraset dry-transfer sheets from the early 1970s, which were produced to be used by graphic designers for filler text. Aldus Corporation created a version in the mid-1980s for their desktop publishing program PageMaker.. A variety of software today can generate semi-random text which looks like jumbled Lati
+ 		</p>
+	
+
+		<p class="neat2"   style="display: none">
+ 			passages were popularized on Letraset dry-transfer sheets from the early 1970s, which were produced to be used by graphic designers for filler text. Aldus Corporation created a version in the mid-1980s for their desktop publishing program PageMaker.. A variety of software today can generate semi-random text which looks like jumbled Lati
+ 		</p>
+	
+	</div>
+		 
+		 <button  class = "btn btn-primary" onclick=" showParagraphs ()"> Show Paragraphs </button>
+
+	<script type="text/javascript">
+
+		function showParagraphs () {
+				$("p.neat").addClass("red-border").slideToggle(1000);
+
+		}
+	
+	</script>	 
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+
+<head> 
+
+	<script type="text/javascript" src="js/myjavascript.js"></script>
+  
+
+</head>
+
+<body> 
+
+<h1 id = "heading" onclick ="changeHeading()"> JAVASCRIPT </h1>
+
+
+
+<h2> Heading 2 </h2>
+
+<h2> Another Heading 2 </h2>
+
+<input type="text" id="number" >
+
+<p id="result"></p>
+
+<button onclick = "Javascript:
+	/* get inputed value
+	calculate its factorial from getFactorial function
+	display the result in the paragraph
+	*/
+	var inputField = document.getElementById('number');
+ 
+	var factorial = getFactorial(inputField.value);
+
+	inputField.style.backgroundColor = 'red'
+
+	 paragraph =  document.getElementById('result');
+
+	inputField.value = inputField.value+ ' factorial is ' +factorial;
+ 
+
+"> Get Factorial </button>
+
+
+
+<h2> DOM Manipulation </h2>
+
+<img src="images/hanmu.jpg" alt="hoton hanmu" id="hamnu" name="Muazzamu" />
+
+
+<script type="text/javascript">
+	image = document.getElementById("hamnu");
+
+	image.src = ""
+</script>
+
+</body>
+
+</html>

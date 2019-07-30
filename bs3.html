@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<style type="text/css">
+	.my-bg-success{
+		background-color: #44ff55;
+	}
+</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<h1> BS4 contectual classes </h1>
+
+
+	<h1>BACKGROUND CLASSES </h1>
+	<div class="my-bg-success text-center">
+		<h2> Success ! </h2>
+		Your information was updated successfully
+	</div>
+
+
+	<div class="bg-warning text-center">
+		<h2> Warning ! </h2>
+		Dont go away
+	</div>
+
+
+	<div class="bg-info text-center">
+		<h2> Info ! </h2>
+		Your can now login
+	</div>
+
+
+	<div class="bg-danger text-center">
+		<h2> Danger ! </h2>
+		Error
+	</div>
+
+
+	<h1>TEXT CLASSES </h1>
+	<div class="text-danger">
+		<h2> Danger ! </h2>
+		Error
+	</div>
+
+	<div class="text-warning">
+		<h2> Warning ! </h2>
+		Warning text
+	</div>
+
+<br/> <br/>
+
+<h1> FORMS </h1>
+
+<form method="" action="" class="was-validated">
+	
+	<div class="form-group">
+		<label for = "fullname"> Enter your full Name: </label>
+		<input type="text" class="form-control"  id = "fullname" name = "fullname" required>
+
+		<div class="invalid-feedback">Please enter your full name</div>
+		<div class="valid-feedback">Your full name is okay </div>
+
+	</div>
+	
+	<div class="form-group">
+		<label for = "fullname"> Enter your date of birth: </label>
+		<input type="time" class="form-control input-sm"  id = "dob" name = "dob" required>
+
+		<div class="invalid-feedback">Please enter your dob </div>
+		<div class="valid-feedback">Your dob is okay </div>
+
+	</div>
+	
+
+
+</form>
+
+<br> <br/>
+
+<h1>
+	BUTTONS
+</h1>
+
+<button name="my-button"  class="btn btn-success btn-lg">sucess button </button>
+
+
+<button name="my-button"  class="btn btn-warning">warning button </button>
+
+
+<a  href="#" name="my-button"   class="btn btn-danger pull-right">Dangerous link </a>
+
+
+
+
+<br/> <br/>
+
+
+
+<h1>
+	IMAGGEs
+</h1>
+
+<img class="img-thumbnail" src="images/hanmu.jpg"  width="200" height="200">
+
+
+
+<br/> <br/>
+
+
+<h1>
+	visibility
+</h1>
+
+ <div class="progress">
+  <div class="progress-bar" style="width:90%"></div>
+</div> 
+
+
+<br/> <br/>
+
+<div class="card">
+  <div class="card-header bg-warning">Payment Procedure</div>
+  <div class="card-body">
+  	<ul>
+  		<li>step 1</li>
+  			<li>step 2</li>
+  				<li>step 3</li>
+  					<li>step 4</li>
+  	</ul>
+  </div>
+  <div class="card-footer bg-warning">Footer</div>
+</div>
+
+
+
+<br/> <br/>
+
+<div class="visible-sm-block bg-success">
+	This content is visible in xs
+</div>
+
+
+
+<h2>Pills with Dropdown</h2>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">
+        <div class="row">
+        	<div class="col-4">This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs</div>
+        	<div class="col-4">This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs</div>
+        	<div class="col-4">This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs</div>
+	
+</div>
+        
+        </a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a></div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+
+
+<br/> <br/> 
+<div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div>
+
+
+<br/> <br/>
+<h1> MODALS </h1>
+
+<!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button>
+
+<!-- The Modal -->
+<div class="modal fade " style="background: rgba(255, 45, 255, 0.5);" id="myModal">
+  <div class="modal-dialog  modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<br/> <br/>
+
+<div class="row" style="background: #345678 url('images/hanmu.jpg') fixed;"> 
+	<div class="col-md-6">TEXT TILE <br/>
+	his content is visible in xsThis content is visible in xsThis content is visible in ble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xxsThis content is visible in xsThis content is visible in xsThis content is visible in xs </div>
+	<div class="col-md-6"></div>
+</div>
+
+  <link rel="stylesheet" href="boostrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<div class="row" style="background: #345678 url('images/reqs11.jpg') fixed;"> 
+	<div class="col-md-6"></div>
+	<div class="col-md-6">TEST TILE  <br/>
+	his content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs content is visible in xs  </div>
+</div>
+
+
+<div class="row" style="background: #345678 url('images/act1.jpg') fixed;"> 
+	<div class="col-md-6">TEXt TITLE  <br/>
+	his content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xble in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs </div>
+	<div class="col-md-6"></div>
+</div>
+
+<br/> <br/>
+
+<div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div><div class=" bg-success">
+	This content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xsThis content is visible in xs
+</div>
+
+<br/> <br/>
+
+	</div> <!-- end container  div !-->
+	
+
+	
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<html>
+
+<head> 
+
+	<script type="text/javascript" src="js/myjavascript.js"></script>
+  
+
+</head>
+
+<body> 
+
+<h1 id = "heading" onclick ="changeHeading()"> JAVASCRIPT Class 3</h1>
+
+
+<p>  this paragraph has a pre-set contents </p>
+
+
+<p id = "notice-board">  this paragraph is the second one </p>
+
+<input type="text" id="score" oninput="processInput(this.value)">
+
+
+<script type="text/javascript">
+	
+	function processInput(inputVal) {
+//if pasw has lower case, mark+10
+//up
+
+		document.getElementById("score").style.backgroundColor = getGradeColor(inputVal);
+	}
+
+	function getGradeColor (grade) {
+	/*	if (grade <50) return "red";
+
+		return "green";
+		*/
+		return (grade <50) ? "red" : "green";
+	}
+
+
+
+	function  initialize() {
+		var1 = "Gaji";
+		var va2 = "Magaji";
+		a = 10;
+		a = a*2;
+		return a;
+	}
+
+	function updateValue() {
+		//a = a*5;
+		return a *= 5;
+	}
+
+	a = 2;
+
+	/*
+
+	alert(" val of a b4 function call is "+a);
+
+	updateValue();
+
+	alert(" val of a after function call is "+a);
+
+	updateValue();
+
+	alert(" val of a after another function call is "+a);
+
+//	alert("var 1 is " + var1);
+//	alert("var 2 is " + var2);
+
+	initialize();
+
+
+	alert(" after var 1 is " + var1);
+	alert("after var 2 is " + var2);
+	*/
+
+	std1 = {};
+	std1.name = "jaja";
+	std1.gender = "male";
+
+	std2 = {};
+	std2.name = "Gaji";
+	std2.gender = "female";
+
+	//alert(std1.name + " " + std1.gender);
+
+	//	alert(std2.name + " " + std2.gender);
+
+		std1.showName = function () {
+			alert(std2.gender);
+		}
+
+	//	std1.showName();
+
+ /*
+paragraphs = document.getElementsByTagName("p");
+ 
+
+ if (confirm("about to change paragraph content, continue ?")) {
+ 	for (i=0; i<paragraphs.length; i++){
+
+ 		paragraphs[i].innerHTML = " new Paragraph content set at iteration " +(i+1);
+ 	}
+ 	//alert(p.length);
+
+ }
+
+ */
+
+ //js dates objects
+
+d1 = new Date("1992-08-09");
+d2 = new Date("2019-06-27");
+
+d1ms = d1.getTime();
+d2ms = d2.getTime();
+
+agems = d2ms-d1ms;
+
+//alert("your age in ms is "+agems);
+
+ //alert((d2 - d1)/86400000);
+
+str = "THIsg";
+
+if (str.match(/[a-h]/)) {
+	alert(" the str matches lower case letters ");
+}
+else {
+	alert(" the str does not match ");
+}
+
+</script>
+
+</body>
+
+</html>

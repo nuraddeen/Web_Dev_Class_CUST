@@ -1,0 +1,74 @@
+<html>
+
+<head> 
+
+	<script type="text/javascript" src="js/myjavascript.js"></script>
+  
+
+</head>
+
+<body> 
+
+<h1 id = "heading" onclick ="changeHeading()"> JAVASCRIPT Class 2</h1>
+
+
+<script type="text/javascript">
+	var name =  3.00001;
+
+	records = 2900;
+	display = 230;//per page
+	pages = records/display;
+
+	//alert (Boolean (null));
+	var num = 10;
+	//display only even  numbers. skip 6 and 8
+/*	for (i=1; i<=num; i++) {
+
+		if (i==6) break;
+
+		if (i%2==0){
+			console.log (i + " is even ");
+		}
+	} */
+
+/*	var money = prompt("enter money to deposit");
+
+	var answer = confirm("depositing "+money+", continue ?");
+
+	if(answer) {
+		alert("deposit successful ");
+	}
+	*/
+
+	//arrays
+
+	var cities = ["Changchun", "Harbin", "Beijing"];
+	//cities.push("Katsina");
+//cities.pop();
+array2 = ["Kano", "Jigawa", "Katsina"];
+
+merger = cities.concat(array2);
+	//alert(merger.slice(3, 6));
+
+	names = "NUra,Hanmu,Nanjia,Aomaer,Adu";
+	arr = names.split(",");
+
+	//alert(arr[4]);
+
+	//extract email username
+	email = "k0nodajigawa@gmail.com";
+
+	var username = email.substring(0, email.indexOf("@"));
+
+	//alert(email.charCodeAt(1));
+
+	number1 = "123";
+	number2 = parseInt(number1)+ 4;
+
+	alert(number2);
+
+</script>
+
+</body>
+
+</html>
