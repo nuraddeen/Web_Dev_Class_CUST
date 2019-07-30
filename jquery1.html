@@ -28,29 +28,134 @@
   <h1 class="text-info">My Jquery Page</h1>
   <p>Boostrap !</p> 
 </div>
-   
+  
  	<div class="container">
 
+ 		<h1>This is our jquery page </h1>
 
- 		<p class="neat" style="display: none">
+
+ 		<p class="neat" styles="display: none">
  			passages were popularized on Letraset dry-transfer sheets from the early 1970s, which were produced to be used by graphic designers for filler text. Aldus Corporation created a version in the mid-1980s for their desktop publishing program PageMaker.. A variety of software today can generate semi-random text which looks like jumbled Lati
  		</p>
 	
 
-		<p class="neat2"   style="display: none">
- 			passages were popularized on Letraset dry-transfer sheets from the early 1970s, which were produced to be used by graphic designers for filler text. Aldus Corporation created a version in the mid-1980s for their desktop publishing program PageMaker.. A variety of software today can generate semi-random text which looks like jumbled Lati
+		<p class="neat"   styles="display: none">
+ 			second PARAg 
  		</p>
+
+ 		<h2>Nigeria have defetaed France 10-0 in 2019 world cup finals</h2>
 	
-	</div>
+	 
 		 
-		 <button  class = "btn btn-primary" onclick=" showParagraphs ()"> Show Paragraphs </button>
+		 <button  id = "my-btn" class = "btn btn-primary" onclick=" "> Add Border </button>
+
+
+
+
+
+<div class="row" >
+	
+<div class="col-md-5">
+	<p>Select your state: </p>
+		 <select class="form-control" name="states" id="states">
+		 	 
+		 	<option value="" selected = "selected"></option>
+		 	<option value="Kano">Kano</option>
+		 	<option value="Katsina">Katsina</option>
+		 	<option value="Sokoto">Sokoto</option>
+		 	<option value="Jigawa">Jigawa</option>
+		 	<option value="Zamfara">Zamfara</option>
+		 </select>
+</div>
+
+<div class="col-md-5">
+	<p>Select your LGA: </p>
+		 <select class="form-control" name="LGA" id="LGAs">
+		 	 
+		 </select>
+</div>
+
+
+</div>
+
+</div>
+
 
 	<script type="text/javascript">
 
 		function showParagraphs () {
-				$("p.neat").addClass("red-border").slideToggle(1000);
+			/*var par = 	$("p.neat");//.addClass("red-border").toggle();
+				alert(par[0].html());
+				*/
 
+		/*	if (jQuery("p, h1").hasClass("red-border")){
+					jQuery("p, h1").removeClass("red-border");
+			}
+			else {
+					jQuery("p, h1").addClass("red-border");
+			}
+			*/
+
+	jQuery("p, h1").fadeToggle(500).addClass("dd").removeClass("");
 		}
+
+		//events, contents, 
+	
+
+	window.onload = function() { 
+			//alert("document is ready again ");
+		}
+	
+		jQuery(document).ready(function () {
+			//alert("document is ready ");
+		});
+
+		$("#my-btn").hover(function () {
+			showParagraphs ();
+		}
+
+		);
+ 
+
+ 	var states = $("#states");
+
+		states.change(function () {
+			selectedVal = states.val();
+
+			var LGAArr = [];
+
+			if (selectedVal == "Kano") {
+				LGAArr = ["Ajingi", "Warawa", "Garindau", "Bichi", "Wudil"];
+			}
+			
+			else if (selectedVal == "Jigawa") {
+				LGAArr = ["Guri", "Hadejia", "Dutse", "Kazaure", "Gumel"];
+			}
+
+			else if (selectedVal == "Katsina") {
+				LGAArr = ["Daura", "Dutsin Ma", "Ingawa", "Malumfashi", "Mashi"];
+			}
+
+			else if (selectedVal == "Sokoto") {
+				LGAArr = ["Binji", "Wamakko", "Kwari", "Binji", "Illela"];
+			}
+
+			else if (selectedVal == "Zamfara") {
+				LGAArr = ["Gusau", "Tsafe", "Talata Mafara", "Gummi", "Bakura"];
+			}
+
+			var htmlText = "<option value = '' ></option>";
+
+			for (i = 0; i<LGAArr.length; i++) {
+
+				htmlText += "<option value = '" +  LGAArr[i] + "' >" +  LGAArr[i] + "</option>";
+
+			}
+
+			//put the html on the lGa select elemnt
+			$("#LGAs").html(htmlText);
+
+		});
 	
 	</script>	 
 
