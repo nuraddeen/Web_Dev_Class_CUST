@@ -78,10 +78,109 @@
 
 </div>
 
+<br/> <br/>
+<div class="row">
+	<br/> <br/>
+	
+	<form method = "post" action  = "" id="register-form" name="register-form" class="form form-vertical">
+
+		<p> Enter your full name: </p>
+		<input id = "fullname" class = "form-control" type="text" placeholder = "enter your name" name = "fullname" style="border: 2px dashed #4488aa" >
+
+<input type="checkbox" id="cbxPrimary" > Primary: <br/>
+<input type="checkbox" id="cbcSecondary" > Sakandare : <br/>
+
+
+<h2> Select Gender </h2>
+<input type="radio" name = "gender" id="male" > Male : <br/>
+
+<input type="radio" name = "gender" id="female" > Female : <br/>
+
+		<input class = "btn btn-primary" type="submit" name="btnRegister" value="Register">
+
+	</form>
+
 </div>
 
 
+
+<br/> <br/>
+
+</div> <!-- end container !-->
+
+
 	<script type="text/javascript">
+
+		//register event handlers for input field
+
+		$("#fullname").keypress(function() {
+			//alert("keypress function");
+		});
+
+	$("#fullname").keydown(function() {
+			//alert("keydown function");
+		});
+
+	$("#fullname").keyup(function() {
+			//alert("keyup function");
+		});
+
+
+	$("#fullname").blur(function() {
+			//alert("blur function");
+		});
+
+
+
+$("#register-form").submit(function() {
+		//validate fields
+		var fullname = $("#fullname").val().trim();
+
+		//if (fullname == "" | fullname == null) {
+		if (fullname.length <3 ) {
+			//alert("please enter your full name");
+
+			//return false;
+		}
+
+		else {
+			//return  confirm("are you you want to submit?");
+			//	return submit;
+		 
+		}
+
+		//return true;
+
+		//try to change input border/* */
+
+	//	$("#fullname").attr("placeholder", "dont enter name");
+
+
+//change css
+/*$("#fullname").css({
+	"border" : "3px solid red"
+});
+
+
+$("#fullname").css({
+	"border" : "1px solid grey"
+});
+	
+//get html/text/val conetnts of elements
+alert($("#register-form").text());
+
+	*/
+
+ if($("#male"). prop("checked") ) {
+ 	alert("you selected primary ");
+ }
+
+return false;
+
+});
+
+$("#register-form").unbind("submit");
+
 
 		function showParagraphs () {
 			/*var par = 	$("p.neat");//.addClass("red-border").toggle();
