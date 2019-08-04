@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> SERVICES </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+	<div class="container">
+		<h1> SERVICES SELECTION </h1>
+
+
+		<div class="row"> 
+				<div class="col-12">
+					Select Service:  <br/>
+					<select class="form-control" id = "services-list" >
+						<option value=""></option> 
+						<option value="Formatting">Formatting</option>
+						<option value="Cleaning">Cleaning</option>
+						<option value="Typing">Typing</option>
+						<option value="Tutoring">Tutoring</option>
+						<option value="Guidance">Guidance</option>
+						<option value="Adverts">Adverts</option>
+						<option value="Travel">Travel</option>
+						<option value="Tourisms">Tourisms</option>
+						<option value="Sewing">Sewing</option>
+						<option value="Marketing">Marketing</option>
+					</select>
+				</div>
+
+		</div>
+
+<br/> <br/>
+
+<!-- notification div -->
+
+<div id="notice-board"></div>
+
+<br/> <br/>
+
+		<div class="row">
+
+		<div class="col-4 bg-warning"> 
+			<button class="btn btn-success" onclick="addService('user1')"> User 1 </button>
+			<input type="text" id="user1-services">
+
+			 <!-- <ol> 
+				<li> Tailoring </li>
+				<li> Tailoring </li>
+				<li> Tailoring </li>
+
+			</ol>
+			-->
+
+			<div id = "user1-services-lists"></div>
+
+		</div>
+
+
+
+		<div class="col-4 bg-info"> 
+			<button class="btn btn-success"  onclick="addService('user2')"> User 2 </button>
+			<input type="text" id="user2-services">
+
+		</div>
+
+
+
+		<div class="col-4 bg-danger"> 
+			<button class="btn btn-success"  onclick="addService('user3')"> User 3 </button>
+			<input type="text" id="user3-services">
+
+		</div>
+
+
+
+		</div>
+	
+	</div> <!-- end container  div !-->
+	
+
+	
+	<script >
+
+		function addService(userName){
+			//get selected service
+			var selectedService = $("#services-list").val();
+
+			//alert(userName + " selected " +selectedService);
+
+			//save user selection
+
+			/* using ifs statements
+			if (userName == "user1") {
+				//get current services
+				var currentServices = 	$("#user1-services").val();
+				//set new services by appending current with selected one
+				$("#user1-services").val(currentServices + selectedService);
+			}
+			else if (userName == "user2") {
+				//get current services
+				var currentServices = 	$("#user2-services").val();
+				//set new services by appending current with selected one
+				$("#user2-services").val(currentServices + selectedService);
+			}
+			
+			else if (userName == "user3") {
+				//get current services
+				var currentServices = 	$("#user3-services").val();
+				//set new services by appending current with selected one
+				$("#user3-services").val(currentServices + selectedService);
+			}
+			*/
+
+			//optimzed code
+
+			var delimeter = "";
+
+
+			var currentServices = 	$("#"+userName+"-services").val();
+
+			if (currentServices != "" & currentServices != null) {
+					delimeter = ";";
+			}
+
+				//set new services by appending current with selected one
+				$("#"+userName+"-services").val(currentServices +delimeter+ selectedService);
+			 
+			 wasSelectedByUser1("Typing") ;
+
+				//$("#"+userName+"-services-lists").html(currentServices +delimeter+ selectedService);
+
+		}//end function addservic
+
+
+		function wasSelectedByUser1(serviceName) {
+			//current services of user 1
+			var currentServices = 	$("#user1-services").val();
+
+
+			//convert string to array
+
+			services = currentServices.split(";");
+
+			htmlList = "<ul>";
+			for (i=0; i<services.length; i++) {
+					htmlList += "<li> " +services[i] + " </li>";
+			}
+
+ 			htmlList += "</ul>";
+ 			//check whether this service is in the array
+
+ 			if (services.includes(serviceName) ) {
+ 				alert(" service us there ");
+ 			}
+			
+		}
+
+
+	</script>
+
+</body>
+</html>
