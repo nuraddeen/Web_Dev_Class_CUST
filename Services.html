@@ -42,7 +42,9 @@
 
 <!-- notification div -->
 
-<div id="notice-board"></div>
+<div id="notice-board" class="alert alert-danger">
+	Please select a service above
+</div>
 
 <br/> <br/>
 
@@ -50,7 +52,7 @@
 
 		<div class="col-4 bg-warning"> 
 			<button class="btn btn-success" onclick="addService('user1')"> User 1 </button>
-			<input type="text" id="user1-services">
+			<input type="text" id="user1-services" hidden>
 
 			 <!-- <ol> 
 				<li> Tailoring </li>
@@ -68,7 +70,9 @@
 
 		<div class="col-4 bg-info"> 
 			<button class="btn btn-success"  onclick="addService('user2')"> User 2 </button>
-			<input type="text" id="user2-services">
+			<input type="text" id="user2-services" hidden="hidden">
+
+			<div id = "user2-services-lists"></div>
 
 		</div>
 
@@ -76,7 +80,9 @@
 
 		<div class="col-4 bg-danger"> 
 			<button class="btn btn-success"  onclick="addService('user3')"> User 3 </button>
-			<input type="text" id="user3-services">
+			<input type="text" id="user3-services" style="display: none">
+
+			<div id = "user3-services-lists"></div>
 
 		</div>
 
@@ -89,6 +95,53 @@
 
 	
 	<script >
+
+
+
+			/*function to show notification */
+			function showNotice(notice) {
+				$("#notice-board").html(notice);
+			}
+
+
+
+			function getServices(userName) {
+						//cget selected services for the user
+				var currentServices = 	$("#"+userName+"-services").val();
+
+				//convert string to array	
+				return currentServices.split(";");
+
+				//return services;
+			}
+
+			
+
+
+
+		function showServicesList(userName) {
+			//get user services
+			 services  = getServices(userName);
+
+			 var html = "<ol>";
+
+			 for (i =0; i<services.length; i++) {
+			 	html += "<li>"+services[i]+"</li>";
+			 }
+
+			 html += "</ol>";
+
+			 //display the services in the user div
+
+			 $("#"+userName+"-services-lists").html(html);
+
+
+		}
+
+
+
+
+
 
 		function addService(userName){
 			//get selected service
@@ -120,23 +173,53 @@
 			}
 			*/
 
-			//optimzed code
-
-			var delimeter = "";
 
 
-			var currentServices = 	$("#"+userName+"-services").val();
+			//check if the selected service is invaluid
 
-			if (currentServices != "" & currentServices != null) {
-					delimeter = ";";
+			if (selectedService == "" | selectedService == null ) {
+				showNotice("Please a select a valid service ");
 			}
 
-				//set new services by appending current with selected one
-				$("#"+userName+"-services").val(currentServices +delimeter+ selectedService);
-			 
-			 wasSelectedByUser1("Typing") ;
+			else if (getServices(userName).length == 3) {
+				showNotice("You have reached maximum number of services ");
+			}
+		
 
-				//$("#"+userName+"-services-lists").html(currentServices +delimeter+ selectedService);
+			else {//add the service to the user	 
+
+				//alert("jjhghh") ;
+
+					var delimeter = "";
+
+
+					var currentServices = 	$("#"+userName+"-services").val();
+
+					if (currentServices != "" & currentServices != null) {
+							delimeter = ";";
+					}
+
+					
+					 
+					if (wasSelected(selectedService)) {
+						showNotice(selectedService + " was  already selected ");
+					}
+					else {
+						//alert(selectedService + " was  NOT selected ");
+		 				$("#"+userName+"-services").val(currentServices +delimeter+ selectedService);
+
+		 				//show list
+		 				showServicesList(userName);
+					}
+
+
+			}//end valid service name
+			//optimzed code
+
+			
+			//set new services by appending current with selected one
+		
+					//$("#"+userName+"-services-lists").html(currentServices +delimeter+ selectedService);
 
 		}//end function addservic
 
@@ -150,18 +233,77 @@
 
 			services = currentServices.split(";");
 
-			htmlList = "<ul>";
+		/*	htmlList = "<ul>";
 			for (i=0; i<services.length; i++) {
 					htmlList += "<li> " +services[i] + " </li>";
 			}
 
  			htmlList += "</ul>";
+ 			*/
+
  			//check whether this service is in the array
 
- 			if (services.includes(serviceName) ) {
- 				alert(" service us there ");
- 			}
+ 			 
 			
+		}
+
+
+
+		function wasSelected( serviceName) {
+			//user 1
+		
+		 
+
+			//
+			for (i=1; i<=3; i++) {
+			
+				//cget selected services for the user
+			/*	var currentServices = 	$("#user"+i+"-services").val();
+
+				//convert string to array	
+				services = currentServices.split(";");
+				*/
+               services  = getServices("user"+i);
+ 				//checking if the service name is in the array and returning true 
+				if (services.includes(serviceName) ) {
+					return true;
+
+				}
+
+			}//end for
+
+
+
+			/**
+			this func returns the services selected by the given user an array
+			*/
+
+		
+			/*
+							var currentServices = 	$("#user2-services").val();
+
+							//convert string to array
+
+						services = currentServices.split(";");
+
+						if (services.includes(serviceName) ) {
+								return true;
+						}
+
+
+						var currentServices = 	$("#user3-services").val();
+
+							//convert string to array
+
+						services = currentServices.split(";");
+
+						if (services.includes(serviceName) ) {
+								return true;
+						}
+			*/
+
+				return false;
+
 		}
 
 
