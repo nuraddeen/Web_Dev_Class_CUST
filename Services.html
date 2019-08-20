@@ -51,8 +51,8 @@
 		<div class="row">
 
 		<div class="col-4 bg-warning"> 
-			<button class="btn btn-success" onclick="addService('user1')"> User 1 </button>
-			<input type="text" id="user1-services" hidden>
+			<button class="btn btn-success"   id="user1-btn" > User 1 </button>
+			<input type="text" id="user1-services" >
 
 			 <!-- <ol> 
 				<li> Tailoring </li>
@@ -69,7 +69,7 @@
 
 
 		<div class="col-4 bg-info"> 
-			<button class="btn btn-success"  onclick="addService('user2')"> User 2 </button>
+			<button class="btn btn-success"     id="user2-btn"> User 2 </button>
 			<input type="text" id="user2-services" hidden="hidden">
 
 			<div id = "user2-services-lists"></div>
@@ -79,7 +79,7 @@
 
 
 		<div class="col-4 bg-danger"> 
-			<button class="btn btn-success"  onclick="addService('user3')"> User 3 </button>
+			<button class="btn btn-success"   id="user3-btn" > User 3 </button>
 			<input type="text" id="user3-services" style="display: none">
 
 			<div id = "user3-services-lists"></div>
@@ -92,9 +92,71 @@
 	
 	</div> <!-- end container  div !-->
 	
-
+MAMP
+XAMP/WAMP
 	
 	<script >
+
+		$(document).ready(function () {
+
+ 			/* we can use loop 
+
+ 			*/
+	/*
+ 			for (i =1; i<=3; i++) {
+
+		 				//user1 event register
+					$("#user"+i+"-btn").click(function () {
+						//get selected service
+						var selectedService = $("#services-list").val();
+						//caal addfucntion
+		 
+						addService(selectedService, "user"+i);
+		 
+					});
+
+ 			}
+
+	*/
+			//user1 event register
+			$("#user1-btn").click(function () {
+				//get selected service
+				var selectedService = $("#services-list").val();
+				//caal addfucntion
+ 
+				addService(selectedService, "user1");
+ 
+			});
+
+
+
+			//user1 event register
+			$("#user2-btn").click(function () {
+				//get selected service
+				var selectedService = $("#services-list").val();
+				//caal addfucntion
+ 
+				addService(selectedService, "user2");
+ 
+			});
+
+
+
+			//user1 event register
+			$("#user3-btn").click(function () {
+				//get selected service
+				var selectedService = $("#services-list").val();
+				//caal addfucntion
+ 
+				addService(selectedService, "user3");
+ 
+			});
+
+
+
+
+
+		});
 
 
 
@@ -115,7 +177,48 @@
 				//return services;
 			}
 
+
+
+
+	function removeService(userName, serviceName) {
+		//get services
+		services2 = getServices(userName);
+
+		//empty the services
+		$("#"+userName+"-services").val(null); 
+
+		//services.forEach(restoreServices);
+
+		servs = "";
+
 			
+		for (i=0; i<services.length; i++) {
+			if (services2[i] != serviceName) {
+				//call add function
+				//addService(services2[i], userName);
+				//alert('adding service '+services2[i]);
+				servs += services2[i];
+
+
+//put delimeter if not at the last element
+				if (i != services.length-1) {
+					servs += ";";
+				}
+			}
+
+
+		}
+
+		//remove the last ;
+
+			$("#"+userName+"-services").val(servs); 
+			showServicesList(userName);
+
+	}
+
+		function restoreServices(serviceName) {
+
+		}	
 
 
 
@@ -125,8 +228,13 @@
 
 			 var html = "<ol>";
 
+			 alert(services.length);
+
 			 for (i =0; i<services.length; i++) {
-			 	html += "<li>"+services[i]+"</li>";
+			 	html += "<div class = 'row'> <div class = 'col-6'> "
+			 	+ "<li style = 'margin-bottom: 10px' >"+services[i]+" </div> " 
+			 	+ "<div class ='col-6'> <button class = 'btn btn-danger btn-sm'  onclick = \"removeService('"+userName+"', '"+services[i]+"' )\" >Remove</button> "
+			 	+" </div> </div> </li>";
 			 }
 
 			 html += "</ol>";
@@ -143,9 +251,9 @@
 
 
 
-		function addService(userName){
+		function addService(selectedService, userName){
 			//get selected service
-			var selectedService = $("#services-list").val();
+			//var selectedService = $("#services-list").val();
 
 			//alert(userName + " selected " +selectedService);
 
