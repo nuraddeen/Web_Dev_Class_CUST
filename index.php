@@ -45,7 +45,9 @@ echo " another line <br/> ";
 
 	 
 	 $num = 25;
- echo '5 x 5 = $num' ;
+         echo '5 x 5 = $num' ;
+         
+         
 
  //date
 
