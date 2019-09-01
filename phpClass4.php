@@ -1,11 +1,14 @@
 <?php
-$var = "<script> alert('hamnu'); </script> ";
+$var = "<script> alert('hamnu'); 23</script> 66";
 
- 
-var_dump( stripslashes($var));
-var_dump(htmlspecialchars($var));
-var_dump(trim($var));
+$name = null;
+if(is_null($name)){
+   // echo " name is set";
+}
 
+$filteredVar = filter_var($var, FILTER_SANITIZE_STRING);
+
+//echo $filteredVar;
 
 
 //capturing
@@ -23,6 +26,47 @@ if (isset($_POST["contact-us"])) {
       if (isset($_POST["fullname"])) {
           echo "<br> <strong> Your Name : </strong> ".  $_POST["fullname"];
       }
+      
+      //XSS text
+      
+    //to filter all your form data
+      //associative array of filters
+      $filters = array(
+          "fullname" => FILTER_SANITIZE_STRING,
+          "email" => FILTER_VALIDATE_EMAIL,
+          "phone_number" => FILTER_VALIDATE_INT,
+          "address" => FILTER_SANITIZE_STRING,
+      );
+      
+      $filtered_inputs = filter_input_array(INPUT_POST, $filters);
+     //value check, boolean | null
+      
+      if ($filtered_inputs["email"] == true) {
+          echo "<br> email is valid";
+      }
+      else {
+          echo "<br> Invalid email ";
+      }
+      
+      
+        if(preg_match("/^([a-zA-Z' ]+)$/",$filtered_inputs["fullname"])){
+            echo '<br> Valid name given.';
+        }else{
+            echo '<br> Invalid name given.';
+        }
+      
+      //check full name (only string are allowed) alpha, i
+      
+      if (ctype_alpha(str_replace(" ", null,  $filtered_inputs["fullname"]))) {
+          echo "<br> full name ia alphabetic ";
+      }
+      
+      else {
+           echo "<br> full name ia NOT alphabetic ";
+      }
+      
+       
+      
       
       echo 
      "<br> <strong> Your Email : </strong> ". $_POST["email"]

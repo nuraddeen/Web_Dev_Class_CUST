@@ -1,14 +1,26 @@
-<?php
-$var = "<script> alert('hamnu'); </script> ";
+<?php 
 
- 
-var_dump( stripslashes($var));
-var_dump(htmlspecialchars($var));
-var_dump(trim($var));
+//cobbecting to the database
+
+//serverName = localhost, username = root,  password is 
 
 
+try{
+    $con = new mysqli("localhost", "root", "nura");//, $database);
+     
+    if ($con -> connect_error) {
+      echo "<br>  DB Not connected ";
+    }
+    else {
+          echo "<br> Connection established ";
+    }
+} catch (Exception $ex) {
+    echo "<br>  Error in db connection ".$ex->getMessage();
+}
 
-//capturing
+
+
+//capturing the data
 if (isset($_POST["contact-us"])) {
     //echo " You have submitted a contact form ";
     //lets capture the data
@@ -23,6 +35,47 @@ if (isset($_POST["contact-us"])) {
       if (isset($_POST["fullname"])) {
           echo "<br> <strong> Your Name : </strong> ".  $_POST["fullname"];
       }
+      
+      //XSS text
+      
+    //to filter all your form data
+      //associative array of filters
+      $filters = array(
+          "fullname" => FILTER_SANITIZE_STRING,
+          "email" => FILTER_VALIDATE_EMAIL,
+          "phone_number" => FILTER_VALIDATE_INT,
+          "address" => FILTER_SANITIZE_STRING,
+      );
+      
+      $filtered_inputs = filter_input_array(INPUT_POST, $filters);
+     //value check, boolean | null
+      
+      if ($filtered_inputs["email"] == true) {
+          echo "<br> email is valid";
+      }
+      else {
+          echo "<br> Invalid email ";
+      }
+      
+      
+        if(preg_match("/^([a-zA-Z' ]+)$/",$filtered_inputs["fullname"])){
+            echo '<br> Valid name given.';
+        }else{
+            echo '<br> Invalid name given.';
+        }
+      
+      //check full name (only string are allowed) alpha, i
+      
+      if (ctype_alpha(str_replace(" ", null,  $filtered_inputs["fullname"]))) {
+          echo "<br> full name ia alphabetic ";
+      }
+      
+      else {
+           echo "<br> full name ia NOT alphabetic ";
+      }
+      
+       
+      
       
       echo 
      "<br> <strong> Your Email : </strong> ". $_POST["email"]
@@ -43,16 +96,17 @@ if (isset($_POST["contact-us"])) {
 <html> 
     <head>
         <title>
-            CUST Web Dev Class | PHP Class 4 Forms Handling
+            CUST Web Dev Class | PHP Class 4 DATABASE
         </title>
     </head>
 <body> 
 
-<h1> Welcome to my site </h1>
+    <h1> Welcome to my site </h1>
 
-<h1> PHP Forms Handling </h1> <br/> 
- <hr/>
- <form action="phpClass4.php" method="POST">
+    <h1> PHP DATABASES </h1> <br/> 
+    <hr/>
+ 
+    <form action="phpClass4.php" method="POST">
                 
                 <h1> Contact Us </h1>
                 <label> Your name </label>
