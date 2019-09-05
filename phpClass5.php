@@ -5,20 +5,55 @@
 //serverName = localhost, username = root,  password is 
 
 
-try{
-    $con = new mysqli("localhost", "root", "nura");//, $database);
+ function saveData ($filtered_inputs){
      
-    if ($con -> connect_error) {
+      var_dump($filtered_inputs);
+try{
+    $con = new mysqli("localhost", "root", "nura", "webdevclassdb");//, $database);
+      
+    //$con is an associative array containing db connection details
+    if ($con -> connect_error) {//if con has error
       echo "<br>  DB Not connected ";
     }
     else {
           echo "<br> Connection established ";
+          
+     /*     //select the databse
+        if (  mysqli_select_db($con, "autocomplete")) {
+            echo "<br> DB Selected ";
+            
+          }
+          else {
+                 echo "<br> Error in DB Selection";
+          }
+      * 
+      */
+          
+          //execute db query
+          
+          $insertcode = "INSERT INTO userstable "
+                  . "(fullname, address, email, password, phone_number)"
+                  . "VALUES ('".$filtered_inputs["fullname"]."', '".$filtered_inputs["address"]."', '".$filtered_inputs["email"]."' ,"
+                  . " '".$filtered_inputs["password"]."', '".$filtered_inputs["phone_number"]."' "
+                  . ")";
+         if (mysqli_query($con, $insertcode)) {
+             echo "<br> Your data saved. Thank you for registering ";
+         }
+        else {
+             echo "<br> Error in saving your data. please try again";
+        }
+         
+       
+          
     }
+    
 } catch (Exception $ex) {
     echo "<br>  Error in db connection ".$ex->getMessage();
 }
 
+}
 
+ 
 
 //capturing the data
 if (isset($_POST["contact-us"])) {
@@ -75,7 +110,9 @@ if (isset($_POST["contact-us"])) {
       }
       
        
+      //save the data
       
+      saveData($filtered_inputs);
       
       echo 
      "<br> <strong> Your Email : </strong> ". $_POST["email"]
@@ -106,7 +143,7 @@ if (isset($_POST["contact-us"])) {
     <h1> PHP DATABASES </h1> <br/> 
     <hr/>
  
-    <form action="phpClass4.php" method="POST">
+    <form action="phpClass5.php" method="POST">
                 
                 <h1> Contact Us </h1>
                 <label> Your name </label>
