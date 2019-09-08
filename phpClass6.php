@@ -37,6 +37,36 @@
 
     }
 
+
+    function infoExists ($con, $email, $pswd = null) {
+         
+                $query_code = "SELECT *  FROM userstable  WHERE email = '$email' ";
+
+                if ($pswd) {
+                    $query_code .= " AND password = '$pswd' ";
+                }
+                  
+                //check if query was executed succesfully
+                    if($result = mysqli_query( $con, $query_code)){
+                          
+                            //get the data
+                            $data = mysqli_fetch_assoc($result);
+
+                            if ($data) {
+                                return true;
+                            }
+
+                            return false;
+                            
+                    }
+                    
+                    else {
+                        throw new Exception("<br> Oops! A Database Error Has Occured " . $query_code ." @ db");
+                
+                    }
+            
+
+    }
  
 
 //capturing the data
@@ -63,14 +93,16 @@ if (isset($_POST["contact-us"])) {
     }
 
     //pswd must be >=3 xters
-    if (strlen($filtered_inputs["password"]) <5 ) {
+    if (strlen($filtered_inputs["phone_number"]) <5 ) {
         $errors [] = "- Your phone number is invalid ";
     }
 
     //email must be valid email address
     if ($filtered_inputs["email"] == false) {
         $errors [] = "- Your email is invalid ";
-       
+    }
+    else if (infoExists($con, $filtered_inputs["email"])){
+        $errors [] = "- The email was already taken by another user ";
     }
 
     //fullname must be alphabetic
@@ -86,7 +118,7 @@ if (isset($_POST["contact-us"])) {
 
     //check if there is errors 
 
-    if (count($errors) ==0 ) {
+    if (count($errors) == 0 ) {
         //np error, lets save
 
         if (saveData($con, $filtered_inputs)) {
@@ -99,6 +131,84 @@ if (isset($_POST["contact-us"])) {
         
 
         unset($_POST);
+    }
+
+
+}//end reg form was sent
+      
+      
+
+
+
+// user login
+else if (isset($_POST["login"])) {
+    //echo " You have submitted a contact form ";
+    //lets capture the data
+
+    $filters = array(
+        "password" => FILTER_SANITIZE_STRING,
+        "email" => FILTER_VALIDATE_EMAIL 
+    );
+
+     
+    
+    //filter and validate the inputs
+    $filtered_inputs = filter_input_array(INPUT_POST, $filters);
+    
+    $errors = array();
+ 
+
+    //pswd must be >=3 xters
+    
+    if (!$filtered_inputs["password"]) {
+        $errors [] = "- Your password is required. ";
+    }
+
+     
+
+    //email must be valid email address
+    if ($filtered_inputs["email"] == false) {
+        $errors [] = "- Your email is invalid ";
+    }
+      
+    //check if there is errors 
+
+    if (count($errors) == 0 ) {
+
+        if (infoExists($con, $filtered_inputs["email"], $filtered_inputs["password"])) {
+            $succesText = " You are logged in ";
+        }
+
+        else {
+            $errors [] = "- No user with such details was found ";
+        }
+        
+        /*//np error, lets save
+            //check if the email and the pswd exists
+            $query_code = "SELECT *  FROM userstable  WHERE email = '".$filtered_inputs["email"]."' AND password = '".$filtered_inputs["password"]."' ";
+                  
+            //check if query was executed succesfully
+                if($result = mysqli_query( $con, $query_code)){
+                      
+                        //get the data
+                        $data = mysqli_fetch_assoc($result);
+
+                        if ($data) {
+                            $succesText = " You are logged in ";
+                        }
+                        else {
+                            $errors [] = "- No user with such details was found ";
+                        }
+ 
+                        
+                }
+                
+                else {
+                    throw new Exception("<br> Oops! A Database Error Has Occured " . $query_code ." @ db");
+            
+                }
+                */
+ 
     }
 
 
@@ -177,7 +287,7 @@ if (isset($_POST["contact-us"])) {
                         echo $_POST["fullname"]; 
                     }
                     
-                    ?>"/>
+                    ?>" required/>
                     <br/>
                     
                     <label> Your email </label>
@@ -187,11 +297,11 @@ if (isset($_POST["contact-us"])) {
                         echo $_POST["email"]; 
                     }
                     
-                    ?>"/>
+                    ?>" required/>
                     <br/>
                     
                     <label> Your password </label>
-                    <input type ="password" name="password" id="password" class = "form-control"  />
+                    <input type ="password" name="password" id="password" class = "form-control"  required/>
                 
                     <br/>
                     
@@ -202,7 +312,7 @@ if (isset($_POST["contact-us"])) {
                         echo $_POST["phone_number"]; 
                     }
                     
-                    ?>"/>
+                    ?>" required/>
                 
                     <br/>
                     <label> Your Address </label>
@@ -212,7 +322,7 @@ if (isset($_POST["contact-us"])) {
                         echo $_POST["address"]; 
                     }
                     
-                    ?>"/>
+                    ?>" required/>
                     
                     <br/>
                     <input type="submit" value="Submit" class = "btn btn-info"  name="contact-us">
@@ -226,7 +336,7 @@ if (isset($_POST["contact-us"])) {
         <div class = "col-md-4" >
             <h1 > Login to your account </h1> 
              
-            <form action="phpClass6.php" method="POST"  style = " width: 60%">
+            <form action="phpClass6.php" method="Post"  style = " width: 60%">
                     <label> Your email </label>
                     <input type ="email" name="email" id="email-login" class = "form-control"  required/>
                     <br/>
