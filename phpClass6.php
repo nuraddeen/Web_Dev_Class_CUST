@@ -51,7 +51,7 @@
                           
                             //get the data
                             $data = mysqli_fetch_assoc($result);
-
+ 
                             if ($data) {
                                 return true;
                             }
@@ -175,14 +175,64 @@ else if (isset($_POST["login"])) {
 
     if (count($errors) == 0 ) {
 
-        if (infoExists($con, $filtered_inputs["email"], $filtered_inputs["password"])) {
-            $succesText = " You are logged in ";
-        }
+      //  if ($data = infoExists($con, $filtered_inputs["email"], $filtered_inputs["password"])) {
+            //$succesText = " You are logged in ";
 
-        else {
-            $errors [] = "- No user with such details was found ";
-        }
+            //redirect user to userhome page
+            //using php
+            //header("Location: UserHome.php");
+
+           // header("Location: http://www.bing.com");
+
+           //using javascript 
+
+           //method 1
+         /*  echo "
+                <script> window.location = 'UserHome.php'; </script>
+           "; */
+           //method 1
+
+           $query_code = "SELECT *  FROM userstable  WHERE email = '".$filtered_inputs["email"]."' 
+            AND  password = '".$filtered_inputs["password"]."' ";
         
+           //check if query was executed succesfully
+               if($result = mysqli_query( $con, $query_code)) {
+                     
+                       //get the data
+                       $data = mysqli_fetch_assoc($result);
+   
+                       if ($data) {
+                         $userid = $data["user_id"];
+                         
+                         session_start();//u can acces session var
+
+                         $_SESSION["user_id"] = $userid;
+
+                         //redirect to user home
+                         header("Location: UserHome.php?user_id=$userid");
+                       }
+
+                       else {
+                            $errors [] = "- No user with such details was found ";
+                       }
+
+                       
+                       
+               }
+               
+               else {
+                   throw new Exception("<br> Oops! A Database Error Has Occured " . $query_code ." @ db");
+           
+               }
+       
+
+           ?>
+
+            <script> window.location = 'UserHome.php?userid='; </script>
+
+           <?php
+
+       
         /*//np error, lets save
             //check if the email and the pswd exists
             $query_code = "SELECT *  FROM userstable  WHERE email = '".$filtered_inputs["email"]."' AND password = '".$filtered_inputs["password"]."' ";
