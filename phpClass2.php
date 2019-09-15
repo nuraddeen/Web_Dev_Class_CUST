@@ -10,7 +10,7 @@
 
 <?php 
 	echo "<h1> PHP Arrays </h1> <br/> ";
-	
+    
         //declare only
         
         $emptyArray = [];

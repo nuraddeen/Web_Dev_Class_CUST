@@ -1,4 +1,12 @@
 <?php 
+
+session_start();
+//check if user has logged in, redirect him to home page
+    if (isset($_SESSION["user_id"]) && is_numeric ($_SESSION["user_id"]) && $_SESSION["user_id"] >0) {
+        //user has logged in
+        header("Location: UserHome.php");
+    }
+
  
         //connecting to the database
         try{
@@ -202,14 +210,17 @@ else if (isset($_POST["login"])) {
                        $data = mysqli_fetch_assoc($result);
    
                        if ($data) {
-                         $userid = $data["user_id"];
-                         
+                          
                          session_start();//u can acces session var
 
-                         $_SESSION["user_id"] = $userid;
+                         $_SESSION["user_id"] = $data["user_id"];
+
+                         session_write_close();//close wiritn sesion
 
                          //redirect to user home
-                         header("Location: UserHome.php?user_id=$userid");
+                       //  header("Location: UserHome.php?user_id=$userid");
+
+                         header("Location: UserHome.php");
                        }
 
                        else {
