@@ -1,0 +1,463 @@
+[
+  {
+    "name": "Afghanistan",
+    "states": [
+      {
+        "name": "Kabul",
+        "localgovts": []
+      },
+      {
+        "name": "Herat",
+        "localgovts": []
+      },
+      {
+        "name": "Kandahar",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Aland Islands",
+    "states": [
+      {
+        "name": "Mariehamn",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Albania",
+    "states": [
+      {
+        "name": "Tirana",
+        "localgovts": []
+      },
+      {
+        "name": "Durres",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Algeria",
+    "states": [
+      {
+        "name": "Algiers",
+        "localgovts": []
+      },
+      {
+        "name": "Oran",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Niger",
+    "states": [
+      {
+        "name": "Niamey",
+        "localgovts": []
+      },
+      {
+        "name": "Agadez",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Nigeria",
+    "states": [
+      {
+        "name": "Lagos",
+        "localgovts": []
+      },
+      {
+        "name": "Kano",
+        "localgovts": []
+      },
+      {
+        "name": "Abuja",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "United States",
+    "states": [
+      {
+        "name": "California",
+        "localgovts": []
+      },
+      {
+        "name": "Texas",
+        "localgovts": []
+      },
+      {
+        "name": "Florida",
+        "localgovts": []
+      },
+      {
+        "name": "New York",
+        "localgovts": []
+      },
+      {
+        "name": "Pennsylvania",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "United Kingdom",
+    "states": [
+      {
+        "name": "England",
+        "localgovts": []
+      },
+      {
+        "name": "Scotland",
+        "localgovts": []
+      },
+      {
+        "name": "Wales",
+        "localgovts": []
+      },
+      {
+        "name": "Northern Ireland",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Canada",
+    "states": [
+      {
+        "name": "Ontario",
+        "localgovts": []
+      },
+      {
+        "name": "Quebec",
+        "localgovts": []
+      },
+      {
+        "name": "British Columbia",
+        "localgovts": []
+      },
+      {
+        "name": "Alberta",
+        "localgovts": []
+      },
+      {
+        "name": "Manitoba",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Australia",
+    "states": [
+      {
+        "name": "New South Wales",
+        "localgovts": []
+      },
+      {
+        "name": "Victoria",
+        "localgovts": []
+      },
+      {
+        "name": "Queensland",
+        "localgovts": []
+      },
+      {
+        "name": "Western Australia",
+        "localgovts": []
+      },
+      {
+        "name": "South Australia",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Brazil",
+    "states": [
+      {
+        "name": "São Paulo",
+        "localgovts": []
+      },
+      {
+        "name": "Rio de Janeiro",
+        "localgovts": []
+      },
+      {
+        "name": "Minas Gerais",
+        "localgovts": []
+      },
+      {
+        "name": "Bahia",
+        "localgovts": []
+      },
+      {
+        "name": "Paraná",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Germany",
+    "states": [
+      {
+        "name": "Bavaria",
+        "localgovts": []
+      },
+      {
+        "name": "North Rhine-Westphalia",
+        "localgovts": []
+      },
+      {
+        "name": "Baden-Württemberg",
+        "localgovts": []
+      },
+      {
+        "name": "Lower Saxony",
+        "localgovts": []
+      },
+      {
+        "name": "Hesse",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "France",
+    "states": [
+      {
+        "name": "Île-de-France",
+        "localgovts": []
+      },
+      {
+        "name": "Provence-Alpes-Côte d'Azur",
+        "localgovts": []
+      },
+      {
+        "name": "Auvergne-Rhône-Alpes",
+        "localgovts": []
+      },
+      {
+        "name": "Hauts-de-France",
+        "localgovts": []
+      },
+      {
+        "name": "Occitanie",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "India",
+    "states": [
+      {
+        "name": "Maharashtra",
+        "localgovts": []
+      },
+      {
+        "name": "Uttar Pradesh",
+        "localgovts": []
+      },
+      {
+        "name": "Karnataka",
+        "localgovts": []
+      },
+      {
+        "name": "Tamil Nadu",
+        "localgovts": []
+      },
+      {
+        "name": "West Bengal",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "China",
+    "states": [
+      {
+        "name": "Guangdong",
+        "localgovts": []
+      },
+      {
+        "name": "Shandong",
+        "localgovts": []
+      },
+      {
+        "name": "Henan",
+        "localgovts": []
+      },
+      {
+        "name": "Sichuan",
+        "localgovts": []
+      },
+      {
+        "name": "Jiangsu",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Japan",
+    "states": [
+      {
+        "name": "Tokyo",
+        "localgovts": []
+      },
+      {
+        "name": "Osaka",
+        "localgovts": []
+      },
+      {
+        "name": "Kanagawa",
+        "localgovts": []
+      },
+      {
+        "name": "Aichi",
+        "localgovts": []
+      },
+      {
+        "name": "Saitama",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "South Korea",
+    "states": [
+      {
+        "name": "Seoul",
+        "localgovts": []
+      },
+      {
+        "name": "Busan",
+        "localgovts": []
+      },
+      {
+        "name": "Gyeonggi",
+        "localgovts": []
+      },
+      {
+        "name": "Incheon",
+        "localgovts": []
+      },
+      {
+        "name": "Daegu",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Mexico",
+    "states": [
+      {
+        "name": "Mexico City",
+        "localgovts": []
+      },
+      {
+        "name": "State of Mexico",
+        "localgovts": []
+      },
+      {
+        "name": "Jalisco",
+        "localgovts": []
+      },
+      {
+        "name": "Veracruz",
+        "localgovts": []
+      },
+      {
+        "name": "Puebla",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Spain",
+    "states": [
+      {
+        "name": "Madrid",
+        "localgovts": []
+      },
+      {
+        "name": "Catalonia",
+        "localgovts": []
+      },
+      {
+        "name": "Valencia",
+        "localgovts": []
+      },
+      {
+        "name": "Andalusia",
+        "localgovts": []
+      },
+      {
+        "name": "Galicia",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Italy",
+    "states": [
+      {
+        "name": "Lombardy",
+        "localgovts": []
+      },
+      {
+        "name": "Lazio",
+        "localgovts": []
+      },
+      {
+        "name": "Campania",
+        "localgovts": []
+      },
+      {
+        "name": "Sicily",
+        "localgovts": []
+      },
+      {
+        "name": "Veneto",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Russia",
+    "states": [
+      {
+        "name": "Moscow",
+        "localgovts": []
+      },
+      {
+        "name": "Saint Petersburg",
+        "localgovts": []
+      },
+      {
+        "name": "Novosibirsk",
+        "localgovts": []
+      },
+      {
+        "name": "Yekaterinburg",
+        "localgovts": []
+      },
+      {
+        "name": "Nizhny Novgorod",
+        "localgovts": []
+      }
+    ]
+  },
+  {
+    "name": "Empty States Country",
+    "states": []
+  },
+  {
+    "name": "Another Empty States Country",
+    "states": []
+  }
+]
