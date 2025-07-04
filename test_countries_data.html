@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Countries and States JSON</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Test African Countries Local Government Data</h1>
+    
+    <div>
+        <label for="country">Select Country:</label>
+        <select id="country">
+            <option value="">Select a country...</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Cameroon">Cameroon</option>
+            <option value="Benin">Benin</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Ivory Coast">Côte d'Ivoire</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="region">Select Region/State:</label>
+        <select id="region">
+            <option value="">Select country first...</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="localgovt">Select Local Government:</label>
+        <select id="localgovt">
+            <option value="">Select region first...</option>
+        </select>
+    </div>
+    
+    <div id="result" style="margin-top: 20px; padding: 10px; background: #f0f0f0;"></div>
+
+    <script>
+        let countriesData = [];
+        
+        // Load the JSON data
+        $.ajax({
+            url: 'countries_and_states.json',
+            dataType: 'json',
+            success: function(data) {
+                countriesData = data;
+                console.log('Loaded countries data:', data.length, 'countries');
+                $('#result').html('<p style="color: green;">✓ Successfully loaded countries_and_states.json with ' + data.length + ' countries</p>');
+            },
+            error: function(xhr, status, error) {
+                console.error('Error loading JSON:', error);
+                $('#result').html('<p style="color: red;">✗ Error loading countries_and_states.json: ' + error + '</p>');
+            }
+        });
+        
+        // Handle country selection
+        $('#country').change(function() {
+            const selectedCountry = $(this).val();
+            const regionSelect = $('#region');
+            const localgovtSelect = $('#localgovt');
+            
+            // Clear dependent dropdowns
+            regionSelect.html('<option value="">Select region...</option>');
+            localgovtSelect.html('<option value="">Select region first...</option>');
+            
+            if (selectedCountry) {
+                const country = countriesData.find(c => c.name === selectedCountry);
+                if (country) {
+                    // Populate regions
+                    country.states.forEach(state => {
+                        regionSelect.append('<option value="' + state.name + '">' + state.name + '</option>');
+                    });
+                    
+                    $('#result').html('<p>Selected: ' + selectedCountry + ' (' + country.states.length + ' regions)</p>');
+                }
+            }
+        });
+        
+        // Handle region selection
+        $('#region').change(function() {
+            const selectedCountry = $('#country').val();
+            const selectedRegion = $(this).val();
+            const localgovtSelect = $('#localgovt');
+            
+            // Clear local government dropdown
+            localgovtSelect.html('<option value="">Select local government...</option>');
+            
+            if (selectedCountry && selectedRegion) {
+                const country = countriesData.find(c => c.name === selectedCountry);
+                if (country) {
+                    const region = country.states.find(s => s.name === selectedRegion);
+                    if (region) {
+                        // Populate local governments
+                        region.localgovts.forEach(lg => {
+                            localgovtSelect.append('<option value="' + lg + '">' + lg + '</option>');
+                        });
+                        
+                        $('#result').html('<p>Selected: ' + selectedCountry + ' > ' + selectedRegion + ' (' + region.localgovts.length + ' local governments)</p>');
+                    }
+                }
+            }
+        });
+        
+        // Handle local government selection
+        $('#localgovt').change(function() {
+            const selectedCountry = $('#country').val();
+            const selectedRegion = $('#region').val();
+            const selectedLocalGovt = $(this).val();
+            
+            if (selectedCountry && selectedRegion && selectedLocalGovt) {
+                $('#result').html('<p><strong>Complete Selection:</strong><br>' + 
+                    'Country: ' + selectedCountry + '<br>' +
+                    'Region: ' + selectedRegion + '<br>' +
+                    'Local Government: ' + selectedLocalGovt + '</p>');
+            }
+        });
+    </script>
+</body>
+</html>
