@@ -2756,72 +2756,149 @@
             {
                 "name": "Alibori",
                 "localgovts": [
+                    "Banikoara",
+                    "Gogounou",
+                    "Kandi",
+                    "Karimama",
+                    "Malanville",
+                    "Ségbana",
                     "Other"
                 ]
             },
             {
                 "name": "Atakora",
                 "localgovts": [
+                    "Boukoumbé",
+                    "Cobly",
+                    "Kérou",
+                    "Kouandé",
+                    "Matéri",
+                    "Natitingou",
+                    "Pehunco",
+                    "Tanguiéta",
+                    "Toucountouna",
                     "Other"
                 ]
             },
             {
                 "name": "Atlantique",
                 "localgovts": [
+                    "Abomey-Calavi",
+                    "Allada",
+                    "Kpomassè",
+                    "Ouidah",
+                    "Sô-Ava",
+                    "Toffo",
+                    "Tori-Bossito",
+                    "Zè",
                     "Other"
                 ]
             },
             {
                 "name": "Borgou",
                 "localgovts": [
+                    "Bembèrèkè",
+                    "Kalalé",
+                    "N'Dali",
+                    "Nikki",
+                    "Parakou",
+                    "Pèrèrè",
+                    "Sinendé",
+                    "Tchaourou",
                     "Other"
                 ]
             },
             {
                 "name": "Collines",
                 "localgovts": [
+                    "Bantè",
+                    "Dassa-Zoumè",
+                    "Glazoué",
+                    "Ouèssè",
+                    "Savalou",
+                    "Savè",
                     "Other"
                 ]
             },
             {
                 "name": "Donga",
                 "localgovts": [
+                    "Bassila",
+                    "Copargo",
+                    "Djougou",
+                    "Ouaké",
                     "Other"
                 ]
             },
             {
                 "name": "Kouffo",
                 "localgovts": [
+                    "Aplahoué",
+                    "Djakotomey",
+                    "Dogbo",
+                    "Klouékanmè",
+                    "Lalo",
+                    "Toviklin",
                     "Other"
                 ]
             },
             {
                 "name": "Littoral",
                 "localgovts": [
+                    "Cotonou",
                     "Other"
                 ]
             },
             {
                 "name": "Mono",
                 "localgovts": [
+                    "Athiémé",
+                    "Bopa",
+                    "Comé",
+                    "Grand-Popo",
+                    "Houéyogbé",
+                    "Lokossa",
                     "Other"
                 ]
             },
             {
                 "name": "Ouémé",
                 "localgovts": [
+                    "Adjarra",
+                    "Adjohoun",
+                    "Aguégués",
+                    "Akpro-Missérété",
+                    "Avrankou",
+                    "Bonou",
+                    "Dangbo",
+                    "Porto-Novo",
+                    "Sèmè-Kpodji",
                     "Other"
                 ]
             },
             {
                 "name": "Plateau",
                 "localgovts": [
+                    "Adja-Ouèrè",
+                    "Ifangni",
+                    "Kétou",
+                    "Pobè",
+                    "Sakété",
                     "Other"
                 ]
             },
             {
                 "name": "Zou",
                 "localgovts": [
+                    "Abomey",
+                    "Agbangnizoun",
+                    "Bohicon",
+                    "Cové",
+                    "Djidja",
+                    "Ouinhi",
+                    "Za-Kpota",
+                    "Zangnanado",
+                    "Zogbodomey",
                     "Other"
                 ]
             }
@@ -4254,60 +4331,118 @@
             {
                 "name": "Adamawa",
                 "localgovts": [
+                    "Djerem",
+                    "Faro-et-Déo",
+                    "Mayo-Banyo",
+                    "Mbéré",
+                    "Vina",
                     "Other"
                 ]
             },
             {
                 "name": "Centre",
                 "localgovts": [
+                    "Haute-Sanaga",
+                    "Lékié",
+                    "Mbam-et-Inoubou",
+                    "Mbam-et-Kim",
+                    "Méfou-et-Afamba",
+                    "Méfou-et-Akono",
+                    "Mfoundi",
+                    "Nyong-et-Kéllé",
+                    "Nyong-et-Mfoumou",
+                    "Nyong-et-So'o",
                     "Other"
                 ]
             },
             {
                 "name": "East",
                 "localgovts": [
+                    "Boumba-et-Ngoko",
+                    "Haut-Nyong",
+                    "Kadey",
+                    "Lom-et-Djerem",
                     "Other"
                 ]
             },
             {
                 "name": "Far North",
                 "localgovts": [
+                    "Diamaré",
+                    "Logone-et-Chari",
+                    "Mayo-Danay",
+                    "Mayo-Kani",
+                    "Mayo-Sava",
+                    "Mayo-Tsanaga",
                     "Other"
                 ]
             },
             {
                 "name": "Littoral",
                 "localgovts": [
+                    "Moungo",
+                    "Nkam",
+                    "Sanaga-Maritime",
+                    "Wouri",
                     "Other"
                 ]
             },
             {
                 "name": "North",
                 "localgovts": [
+                    "Bénoué",
+                    "Faro",
+                    "Mayo-Louti",
+                    "Mayo-Rey",
                     "Other"
                 ]
             },
             {
                 "name": "Northwest",
                 "localgovts": [
+                    "Boyo",
+                    "Bui",
+                    "Donga-Mantung",
+                    "Menchum",
+                    "Mezam",
+                    "Momo",
+                    "Ngo-Ketunjia",
                     "Other"
                 ]
             },
             {
                 "name": "South",
                 "localgovts": [
+                    "Dja-et-Lobo",
+                    "Mvila",
+                    "Océan",
+                    "Vallée-du-Ntem",
                     "Other"
                 ]
             },
             {
                 "name": "Southwest",
                 "localgovts": [
+                    "Fako",
+                    "Koupé-Manengouba",
+                    "Lebialem",
+                    "Manyu",
+                    "Meme",
+                    "Ndian",
                     "Other"
                 ]
             },
             {
                 "name": "West",
                 "localgovts": [
+                    "Bamboutos",
+                    "Haut-Nkam",
+                    "Hauts-Plateaux",
+                    "Koung-Khi",
+                    "Menoua",
+                    "Mifi",
+                    "Mingoa",
+                    "Noun",
                     "Other"
                 ]
             }
@@ -7053,48 +7188,136 @@
             {
                 "name": "Alexandria",
                 "localgovts": [
+                    "Montaza",
+                    "Sharq",
+                    "Wasat",
+                    "Gharb",
+                    "Gomrok",
+                    "Amriya",
                     "Other"
                 ]
             },
             {
                 "name": "Aswan",
                 "localgovts": [
+                    "Aswan",
+                    "Kom Ombo",
+                    "Edfu",
+                    "Nasr al-Nuba",
                     "Other"
                 ]
             },
             {
                 "name": "Asyut",
                 "localgovts": [
+                    "Asyut",
+                    "Dayrout",
+                    "Qusiya",
+                    "Manfalut",
+                    "Abnoub",
+                    "Sahel Selim",
+                    "El Badari",
+                    "Sidfa",
+                    "El Ghanayem",
+                    "Abu Tig",
+                    "El Fateh",
                     "Other"
                 ]
             },
             {
                 "name": "Beheira",
                 "localgovts": [
+                    "Damanhour",
+                    "Kafr el-Dawwar",
+                    "Rashid",
+                    "Edku",
+                    "Abu Hummus",
+                    "Abu el-Matamir",
+                    "Delengat",
+                    "Mahmudiyah",
+                    "Rahmaniyah",
+                    "Kom Hamada",
+                    "Badr",
+                    "Wadi al-Natroun",
+                    "Nubariyah",
+                    "Iteay el-Barud",
+                    "Housh Eissa",
+                    "Shoubrakhit",
                     "Other"
                 ]
             },
             {
                 "name": "Beni Suef",
                 "localgovts": [
+                    "Beni Suef",
+                    "el-Wasta",
+                    "Naser",
+                    "Ehnasia",
+                    "Somosta",
+                    "el-Fashn",
+                    "ببا",
                     "Other"
                 ]
             },
             {
                 "name": "Cairo",
                 "localgovts": [
+                    "Nasr City",
+                    "Maadi",
+                    "Heliopolis",
+                    "Shoubra",
+                    "Dokki",
+                    "Zamalek",
+                    "Helwan",
+                    "Masr el-Qadima",
+                    "Bulaq",
+                    "Abdeen",
+                    "Azbakeya",
+                    "Bab al-Sha'riya",
+                    "Darb al-Ahmar",
+                    "Gamaliya",
+                    "Khalifa",
+                    "Manshiya Nasir",
+                    "Misr al-Qadima",
+                    "Muqattam",
+                    "Qahr al-Nil",
+                    "Rod al-Farag",
+                    "Sayeda Zaynab",
+                    "Shubra",
+                    "Wayli",
+                    "Zawiya al-Hamra",
                     "Other"
                 ]
             },
             {
                 "name": "Dakahlia",
                 "localgovts": [
+                    "Mansoura",
+                    "Talkha",
+                    "Mitt Ghamr",
+                    "Dekernes",
+                    "Aga",
+                    "Minyat an-Nasr",
+                    "Sinbillawayn",
+                    "el-Kurdi",
+                    "Bani Ubaid",
+                    "el-Manzala",
+                    "Matariya",
+                    "Belqas",
+                    "Gamasa",
+                    "Mahmudiyah",
+                    "Nabaroh",
                     "Other"
                 ]
             },
             {
                 "name": "Damietta",
                 "localgovts": [
+                    "Damietta",
+                    "New Damietta",
+                    "Faraskur",
+                    "Zarqa",
+                    "Kafr Saad",
                     "Other"
                 ]
             },
@@ -7107,30 +7330,78 @@
             {
                 "name": "Gharbia",
                 "localgovts": [
+                    "Tanta",
+                    "el-Mahalla el-Kubra",
+                    "Kafr el-Zayat",
+                    "Zefta",
+                    "Samannoud",
+                    "el-Santa",
+                    "Qutour",
+                    "Basyoun",
                     "Other"
                 ]
             },
             {
                 "name": "Giza",
                 "localgovts": [
+                    "Giza",
+                    "6th of October City",
+                    "Sheikh Zayed City",
+                    "Haram",
+                    "Dokki",
+                    "Agouza",
+                    "Mohandessin",
+                    "Bulaq al-Dakrour",
+                    "Warraq",
+                    "Imbaba",
+                    "Kit Kat",
+                    "Shubra al-Khaima",
+                    "Bashtil",
+                    "Kafr Ghtas",
+                    "Manshiyat al-Qanater",
+                    "Atfih",
+                    "Hawamidiya",
+                    "Badrshein",
+                    "Saf",
                     "Other"
                 ]
             },
             {
                 "name": "Ismailia",
                 "localgovts": [
+                    "Ismailia",
+                    "Fayed",
+                    "Qantara Gharb",
+                    "Qantara Sharq",
+                    "Abu Suwir",
+                    "Kasasin",
+                    "Tel el-Kebir",
                     "Other"
                 ]
             },
             {
                 "name": "Kafr el-Sheikh",
                 "localgovts": [
+                    "Kafr el-Sheikh",
+                    "Disuq",
+                    "Fooh",
+                    "Qallin",
+                    "Sidi Salim",
+                    "Hamoul",
+                    "Biyala",
+                    "Riyadh",
+                    "Baltim",
+                    "Mutubis",
                     "Other"
                 ]
             },
             {
                 "name": "Luxor",
                 "localgovts": [
+                    "Luxor",
+                    "Esna",
+                    "Armant",
+                    "Tod",
                     "Other"
                 ]
             },
@@ -7143,72 +7414,167 @@
             {
                 "name": "Minya",
                 "localgovts": [
+                    "Minya",
+                    "Samalout",
+                    "Matai",
+                    "Bani Mazar",
+                    "Maghagha",
+                    "Ard el-Wadi",
+                    "Abu Qurqas",
+                    "Mallawy",
+                    "Deir Mawas",
                     "Other"
                 ]
             },
             {
                 "name": "Monufia",
                 "localgovts": [
+                    "Shibin el-Kom",
+                    "Sadat City",
+                    "Menouf",
+                    "Sers el-Lyan",
+                    "Ashmon",
+                    "el-Bagour",
+                    "Quesna",
+                    "Berkat el-Sab",
+                    "Tala",
+                    "el-Shohada",
                     "Other"
                 ]
             },
             {
                 "name": "New Valley",
                 "localgovts": [
+                    "Kharga",
+                    "Dakhla",
+                    "Farafra",
+                    "Baris",
+                    "Balat",
                     "Other"
                 ]
             },
             {
                 "name": "North Sinai",
                 "localgovts": [
+                    "Arish",
+                    "Sheikh Zuweid",
+                    "Rafah",
+                    "Bir al-Abd",
+                    "Hassana",
+                    "Nakhl",
                     "Other"
                 ]
             },
             {
                 "name": "Port Said",
                 "localgovts": [
+                    "Port Said",
+                    "Port Fuad",
                     "Other"
                 ]
             },
             {
                 "name": "Qalyubia",
                 "localgovts": [
+                    "Banha",
+                    "Shibin el-Qanater",
+                    "el-Qanater el-Khayriya",
+                    "Kafr Shokr",
+                    "Tookh",
+                    "Qaha",
+                    "Obour",
+                    "Khosous",
+                    "Khanka",
                     "Other"
                 ]
             },
             {
                 "name": "Qena",
                 "localgovts": [
+                    "Qena",
+                    "Nag Hammadi",
+                    "Qus",
+                    "Dishna",
+                    "Farshout",
+                    "Naqada",
+                    "Abu Tisht",
+                    "Armant",
+                    "Esna",
                     "Other"
                 ]
             },
             {
                 "name": "Red Sea",
                 "localgovts": [
+                    "Hurghada",
+                    "Safaga",
+                    "Qusayr",
+                    "Marsa Alam",
+                    "Shalatin",
+                    "Halaib",
+                    "Ras Gharib",
                     "Other"
                 ]
             },
             {
                 "name": "Sharqia",
                 "localgovts": [
+                    "Zagazig",
+                    "10th of Ramadan City",
+                    "Minya el-Qamh",
+                    "Bilbeis",
+                    "Mashtool el-Souk",
+                    "Qenaiat",
+                    "Abu Kabir",
+                    "Faqous",
+                    "Kafr Saqr",
+                    "Awlad Saqr",
+                    "Husseiniya",
+                    "Abu Hammad",
+                    "Deirb Negm",
+                    "Zagazig",
                     "Other"
                 ]
             },
             {
                 "name": "Sohag",
                 "localgovts": [
+                    "Sohag",
+                    "Akhmim",
+                    "Girga",
+                    "Balyana",
+                    "el-Maragha",
+                    "el-Monsha'a",
+                    "Dar el-Salam",
+                    "Juhayna",
+                    "Saqulta",
+                    "Gerga",
+                    "Tahta",
                     "Other"
                 ]
             },
             {
                 "name": "South Sinai",
                 "localgovts": [
+                    "Sharm el-Sheikh",
+                    "Dahab",
+                    "Nuweiba",
+                    "Taba",
+                    "Saint Catherine",
+                    "Ras Sidr",
+                    "Abu Rudeis",
+                    "Abu Zenima",
                     "Other"
                 ]
             },
             {
                 "name": "Suez",
                 "localgovts": [
+                    "Suez",
+                    "Ain Sokhna",
+                    "Faisal",
+                    "Ganayen",
+                    "Arbaeen",
                     "Other"
                 ]
             }
@@ -9026,96 +9392,336 @@
             {
                 "name": "Ahafo",
                 "localgovts": [
+                    "Asunafo North Municipal",
+                    "Asunafo South District",
+                    "Asutifi North District",
+                    "Asutifi South District",
+                    "Tano North Municipal",
+                    "Tano South Municipal",
                     "Other"
                 ]
             },
             {
                 "name": "Ashanti",
                 "localgovts": [
+                    "Kumasi Metropolitan",
+                    "Obuasi Municipal",
+                    "Ejisu Municipal",
+                    "Juaben Municipal",
+                    "Kwabre East Municipal",
+                    "Afigya Kwabre South District",
+                    "Sekyere East District",
+                    "Sekyere Central District",
+                    "Sekyere South District",
+                    "Ejura Sekyedumase Municipal",
+                    "Mampong Municipal",
+                    "Asante Akim North Municipal",
+                    "Asante Akim South Municipal",
+                    "Asante Akim Central Municipal",
+                    "Adansi North District",
+                    "Adansi South District",
+                    "Oforikrom Municipal",
+                    "Old Tafo Municipal",
+                    "Suame Municipal",
+                    "Kwadaso Municipal",
+                    "Asokwa Municipal",
+                    "Manhyia North Municipal",
+                    "Manhyia South Municipal",
+                    "Atwima Kwanwoma District",
+                    "Atwima Nwabiagya Municipal",
+                    "Atwima Nwabiagya North District",
+                    "Atwima Mponua District",
+                    "Afigya Sekyere East District",
+                    "Bekwai Municipal",
+                    "Bosome Freho District",
+                    "Bosomtwe District",
+                    "Offinso Municipal",
+                    "Offinso North District",
                     "Other"
                 ]
             },
             {
                 "name": "Bono",
                 "localgovts": [
+                    "Sunyani Municipal",
+                    "Sunyani West District",
+                    "Berekum Municipal",
+                    "Dormaa Central Municipal",
+                    "Dormaa East District",
+                    "Dormaa West District",
+                    "Jaman South Municipal",
+                    "Jaman North District",
+                    "Tain District",
+                    "Wenchi Municipal",
+                    "Techiman Municipal",
+                    "Techiman North District",
                     "Other"
                 ]
             },
             {
                 "name": "Bono East",
                 "localgovts": [
+                    "Techiman Municipal",
+                    "Techiman North District",
+                    "Nkoranza North District",
+                    "Nkoranza South Municipal",
+                    "Kintampo North Municipal",
+                    "Kintampo South District",
+                    "Pru West District",
+                    "Pru East District",
+                    "Sene West District",
+                    "Sene East District",
+                    "Atebubu Amantin Municipal",
                     "Other"
                 ]
             },
             {
                 "name": "Central",
                 "localgovts": [
+                    "Cape Coast Metropolitan",
+                    "Elmina Municipal",
+                    "Komenda Edina Eguafo Abirem Municipal",
+                    "Abura Asebu Kwamankese District",
+                    "Mfantsiman Municipal",
+                    "Ajumako Enyan Essiam District",
+                    "Gomoa Central District",
+                    "Gomoa East District",
+                    "Gomoa West District",
+                    "Effutu Municipal",
+                    "Awutu Senya East Municipal",
+                    "Awutu Senya West District",
+                    "Agona East District",
+                    "Agona West Municipal",
+                    "Assin Central Municipal",
+                    "Assin North Municipal",
+                    "Assin South District",
+                    "Twifo Hemang Lower Denkyira District",
+                    "Twifo Atti Morkwa District",
+                    "Upper Denkyira East Municipal",
+                    "Upper Denkyira West District",
+                    "Asikuma Odoben Brakwa District",
                     "Other"
                 ]
             },
             {
                 "name": "Eastern",
                 "localgovts": [
+                    "New Juaben Municipal",
+                    "Koforidua Municipal",
+                    "Akuapem North Municipal",
+                    "Akuapem South District",
+                    "Yilo Krobo Municipal",
+                    "Lower Manya Krobo Municipal",
+                    "Upper Manya Krobo District",
+                    "Asuogyaman District",
+                    "West Akim Municipal",
+                    "East Akim Municipal",
+                    "Atiwa West District",
+                    "Atiwa East District",
+                    "Fanteakwa North District",
+                    "Fanteakwa South District",
+                    "Suhum Municipal",
+                    "Nsawam Adoagyiri Municipal",
+                    "Akwapim North Municipal",
+                    "Okere District",
+                    "Ayensuano District",
+                    "Denkyembour District",
+                    "Kwaebibirem Municipal",
+                    "Birim Central Municipal",
+                    "Birim North District",
+                    "Birim South District",
+                    "Achiase District",
+                    "Asene Manso Akroso District",
+                    "Kwahu West Municipal",
+                    "Kwahu South District",
+                    "Kwahu East District",
+                    "Kwahu Afram Plains South District",
+                    "Kwahu Afram Plains North District",
+                    "Upper West Akim District",
                     "Other"
                 ]
             },
             {
                 "name": "Greater Accra",
                 "localgovts": [
+                    "Accra Metropolitan",
+                    "Tema Metropolitan",
+                    "Ga Central Municipal",
+                    "Ga East Municipal",
+                    "Ga North Municipal",
+                    "Ga South Municipal",
+                    "Ga West Municipal",
+                    "Adenta Municipal",
+                    "Ashaiman Municipal",
+                    "Ledzokuku Municipal",
+                    "Krowor Municipal",
+                    "Ablekuma Central Municipal",
+                    "Ablekuma North Municipal",
+                    "Ablekuma West Municipal",
+                    "Ayawaso Central Municipal",
+                    "Ayawaso East Municipal",
+                    "Ayawaso North Municipal",
+                    "Ayawaso West Municipal",
+                    "Okaikwei North Municipal",
+                    "Weija Gbawe Municipal",
+                    "Adentan Municipal",
+                    "La Nkwantanang Madina Municipal",
+                    "La Dade Kotopon Municipal",
+                    "Korle Klottey Municipal",
+                    "Ashiedu Keteke Municipal",
+                    "Okai Koi South Municipal",
+                    "Shai Osudoku District",
+                    "Ningo Prampram District",
+                    "Kpone Katamanso Municipal",
                     "Other"
                 ]
             },
             {
                 "name": "North East",
                 "localgovts": [
+                    "Nalerigu Gambaga Municipal",
+                    "Bunkpurugu Nakpanduri District",
+                    "Yunyoo District",
+                    "Mamprugu Moagduri District",
+                    "East Mamprusi Municipal",
+                    "West Mamprusi Municipal",
                     "Other"
                 ]
             },
             {
                 "name": "Northern",
                 "localgovts": [
+                    "Tamale Metropolitan",
+                    "Sagnarigu Municipal",
+                    "Gushegu Municipal",
+                    "Karaga District",
+                    "Kumbungu District",
+                    "Nanton District",
+                    "Savelugu Municipal",
+                    "Tolon District",
+                    "Zabzugu District",
+                    "Tatale Sanguli District",
+                    "Yendi Municipal",
+                    "Mion District",
                     "Other"
                 ]
             },
             {
                 "name": "Oti",
                 "localgovts": [
+                    "Hohoe Municipal",
+                    "Jasikan District",
+                    "Kadjebi District",
+                    "Nkwanta South Municipal",
+                    "Nkwanta North District",
+                    "Krachi East Municipal",
+                    "Krachi West District",
+                    "Krachi Nchumuru District",
+                    "Biakoye District",
                     "Other"
                 ]
             },
             {
                 "name": "Savannah",
                 "localgovts": [
+                    "Damongo Municipal",
+                    "Sawla Tuna Kalba District",
+                    "West Gonja Municipal",
+                    "Central Gonja District",
+                    "East Gonja Municipal",
+                    "North Gonja District",
+                    "Bole District",
                     "Other"
                 ]
             },
             {
                 "name": "Upper East",
                 "localgovts": [
+                    "Bolgatanga Municipal",
+                    "Bongo District",
+                    "Builsa North Municipal",
+                    "Builsa South District",
+                    "Kassena Nankana West District",
+                    "Kassena Nankana Municipal",
+                    "Nabdam District",
+                    "Talensi District",
+                    "Bawku Municipal",
+                    "Bawku West District",
+                    "Pusiga District",
+                    "Garu District",
+                    "Tempane District",
+                    "Binduri District",
                     "Other"
                 ]
             },
             {
                 "name": "Upper West",
                 "localgovts": [
+                    "Wa Municipal",
+                    "Wa East District",
+                    "Wa West District",
+                    "Nadowli Kaleo District",
+                    "Jirapa Municipal",
+                    "Lawra Municipal",
+                    "Lambussie District",
+                    "Nandom Municipal",
+                    "Sissala East Municipal",
+                    "Sissala West District",
+                    "Daffiama Bussie Issa District",
                     "Other"
                 ]
             },
             {
                 "name": "Volta",
                 "localgovts": [
+                    "Ho Municipal",
+                    "Ho West District",
+                    "Adaklu District",
+                    "Agotime Ziope District",
+                    "South Tongu District",
+                    "Central Tongu District",
+                    "North Tongu District",
+                    "Keta Municipal",
+                    "Anloga District",
+                    "Ketu North Municipal",
+                    "Ketu South Municipal",
+                    "Akatsi North District",
+                    "Akatsi South District",
+                    "Ave District",
                     "Other"
                 ]
             },
             {
                 "name": "Western",
                 "localgovts": [
+                    "Sekondi Takoradi Metropolitan",
+                    "Shama District",
+                    "Ahanta West Municipal",
+                    "Nzema East Municipal",
+                    "Ellembelle District",
+                    "Jomoro Municipal",
+                    "Tarkwa Nsuaem Municipal",
+                    "Prestea Huni Valley Municipal",
+                    "Wassa East District",
+                    "Wassa Amenfi Central Municipal",
+                    "Wassa Amenfi East Municipal",
+                    "Wassa Amenfi West District",
+                    "Mpohor District",
+                    "Wassa Akropong District",
                     "Other"
                 ]
             },
             {
                 "name": "Western North",
                 "localgovts": [
+                    "Sefwi Wiawso Municipal",
+                    "Bodi District",
+                    "Suaman District",
+                    "Akontombra District",
+                    "Aowin Municipal",
+                    "Juaboso District",
+                    "Bia East District",
+                    "Bia West District",
                     "Other"
                 ]
             }
@@ -12508,30 +13114,48 @@
             {
                 "name": "Abidjan",
                 "localgovts": [
+                    "Abidjan",
+                    "Anyama",
+                    "Bingerville",
+                    "Songon",
                     "Other"
                 ]
             },
             {
                 "name": "Agnéby",
                 "localgovts": [
+                    "Agboville",
+                    "Sikensi",
+                    "Tiassalé",
                     "Other"
                 ]
             },
             {
                 "name": "Bafing",
                 "localgovts": [
+                    "Touba",
+                    "Ouaninou",
+                    "Koro",
                     "Other"
                 ]
             },
             {
                 "name": "Bas-Sassandra",
                 "localgovts": [
+                    "Sassandra",
+                    "San-Pédro",
+                    "Tabou",
+                    "Grand-Béréby",
                     "Other"
                 ]
             },
             {
                 "name": "Bas-Sassandra",
                 "localgovts": [
+                    "Sassandra",
+                    "San-Pédro",
+                    "Tabou",
+                    "Grand-Béréby",
                     "Other"
                 ]
             },
@@ -12544,12 +13168,18 @@
             {
                 "name": "Denguélé",
                 "localgovts": [
+                    "Odienné",
+                    "Samatiguila",
+                    "Minignan",
                     "Other"
                 ]
             },
             {
                 "name": "Denguélé",
                 "localgovts": [
+                    "Odienné",
+                    "Samatiguila",
+                    "Minignan",
                     "Other"
                 ]
             },
@@ -12562,6 +13192,8 @@
             {
                 "name": "Fromager",
                 "localgovts": [
+                    "Gagnoa",
+                    "Oumé",
                     "Other"
                 ]
             },
@@ -12574,36 +13206,57 @@
             {
                 "name": "Haut-Sassandra",
                 "localgovts": [
+                    "Daloa",
+                    "Issia",
+                    "Vavoua",
+                    "Zoukougbeu",
                     "Other"
                 ]
             },
             {
                 "name": "Lacs",
                 "localgovts": [
+                    "Yamoussoukro",
+                    "Didievi",
+                    "Tiébissou",
+                    "Toumodi",
                     "Other"
                 ]
             },
             {
                 "name": "Lacs",
                 "localgovts": [
+                    "Yamoussoukro",
+                    "Didievi",
+                    "Tiébissou",
+                    "Toumodi",
                     "Other"
                 ]
             },
             {
                 "name": "Lagunes",
                 "localgovts": [
+                    "Dabou",
+                    "Grand-Lahou",
+                    "Jacqueville",
                     "Other"
                 ]
             },
             {
                 "name": "Lagunes",
                 "localgovts": [
+                    "Dabou",
+                    "Grand-Lahou",
+                    "Jacqueville",
                     "Other"
                 ]
             },
             {
                 "name": "Marahoué",
                 "localgovts": [
+                    "Bouaflé",
+                    "Sinfra",
+                    "Zuénoula",
                     "Other"
                 ]
             },
@@ -12616,18 +13269,28 @@
             {
                 "name": "Moyen-Cavally",
                 "localgovts": [
+                    "Guiglo",
+                    "Bloléquin",
+                    "Toulépleu",
                     "Other"
                 ]
             },
             {
                 "name": "Moyen-Comoé",
                 "localgovts": [
+                    "Abengourou",
+                    "Agnibilékrou",
+                    "Bettié",
                     "Other"
                 ]
             },
             {
                 "name": "N'zi-Comoé",
                 "localgovts": [
+                    "Dimbokro",
+                    "Bongouanou",
+                    "Bocanda",
+                    "M'Bahiakro",
                     "Other"
                 ]
             },
@@ -12640,30 +13303,58 @@
             {
                 "name": "Savanes",
                 "localgovts": [
+                    "Korhogo",
+                    "Boundiali",
+                    "Dikodougou",
+                    "Ferké",
+                    "Ouangolodougou",
+                    "Sinématiali",
+                    "Tengréla",
                     "Other"
                 ]
             },
             {
                 "name": "Sud-Bandama",
                 "localgovts": [
+                    "Divo",
+                    "Fresco",
+                    "Lakota",
                     "Other"
                 ]
             },
             {
                 "name": "Sud-Comoé",
                 "localgovts": [
+                    "Aboisso",
+                    "Adiaké",
+                    "Grand-Bassam",
+                    "Tiapoum",
                     "Other"
                 ]
             },
             {
                 "name": "Vallée du Bandama",
                 "localgovts": [
+                    "Bouaké",
+                    "Béoumi",
+                    "Botro",
+                    "Dabakala",
+                    "Katiola",
+                    "Niakaramadougou",
+                    "Sakassou",
                     "Other"
                 ]
             },
             {
                 "name": "Vallée du Bandama",
                 "localgovts": [
+                    "Bouaké",
+                    "Béoumi",
+                    "Botro",
+                    "Dabakala",
+                    "Katiola",
+                    "Niakaramadougou",
+                    "Sakassou",
                     "Other"
                 ]
             },
@@ -12676,6 +13367,8 @@
             {
                 "name": "Worodougou",
                 "localgovts": [
+                    "Séguéla",
+                    "Mankono",
                     "Other"
                 ]
             },
@@ -12688,6 +13381,11 @@
             {
                 "name": "Zanzan",
                 "localgovts": [
+                    "Bondoukou",
+                    "Bouna",
+                    "Nassian",
+                    "Tanda",
+                    "Transua",
                     "Other"
                 ]
             }
@@ -13342,174 +14040,360 @@
             {
                 "name": "Baringo",
                 "localgovts": [
+                    "Baringo North",
+                    "Baringo Central",
+                    "Baringo South",
+                    "Mogotio",
+                    "Eldama Ravine",
+                    "Tiaty",
                     "Other"
                 ]
             },
             {
                 "name": "Bomet",
                 "localgovts": [
+                    "Sotik",
+                    "Chepalungu",
+                    "Bomet East",
+                    "Bomet Central",
+                    "Konoin",
                     "Other"
                 ]
             },
             {
                 "name": "Bungoma",
                 "localgovts": [
+                    "Mt. Elgon",
+                    "Sirisia",
+                    "Kabuchai",
+                    "Bumula",
+                    "Kanduyi",
+                    "Webuye East",
+                    "Webuye West",
+                    "Kimilili",
+                    "Tongaren",
                     "Other"
                 ]
             },
             {
                 "name": "Busia",
                 "localgovts": [
+                    "Teso North",
+                    "Teso South",
+                    "Nambale",
+                    "Matayos",
+                    "Butula",
+                    "Funyula",
+                    "Budalangi",
                     "Other"
                 ]
             },
             {
                 "name": "Elgeyo-Marakwet",
                 "localgovts": [
+                    "Keiyo North",
+                    "Keiyo South",
+                    "Marakwet East",
+                    "Marakwet West",
                     "Other"
                 ]
             },
             {
                 "name": "Embu",
                 "localgovts": [
+                    "Manyatta",
+                    "Runyenjes",
+                    "Mbeere South",
+                    "Mbeere North",
                     "Other"
                 ]
             },
             {
                 "name": "Garissa",
                 "localgovts": [
+                    "Garissa Township",
+                    "Balambala",
+                    "Lagdera",
+                    "Dadaab",
+                    "Fafi",
+                    "Ijara",
                     "Other"
                 ]
             },
             {
                 "name": "Homa Bay",
                 "localgovts": [
+                    "Kasipul",
+                    "Kabondo Kasipul",
+                    "Karachuonyo",
+                    "Rangwe",
+                    "Homa Bay Town",
+                    "Ndhiwa",
+                    "Suba North",
+                    "Suba South",
                     "Other"
                 ]
             },
             {
                 "name": "Isiolo",
                 "localgovts": [
+                    "Isiolo North",
+                    "Isiolo South",
                     "Other"
                 ]
             },
             {
                 "name": "Kajiado",
                 "localgovts": [
+                    "Kajiado North",
+                    "Kajiado Central",
+                    "Kajiado East",
+                    "Kajiado West",
+                    "Kajiado South",
                     "Other"
                 ]
             },
             {
                 "name": "Kakamega",
                 "localgovts": [
+                    "Lugari",
+                    "Likuyani",
+                    "Malava",
+                    "Lurambi",
+                    "Navakholo",
+                    "Mumias West",
+                    "Mumias East",
+                    "Matungu",
+                    "Butere",
+                    "Khwisero",
+                    "Shinyalu",
+                    "Ikolomani",
                     "Other"
                 ]
             },
             {
                 "name": "Kericho",
                 "localgovts": [
+                    "Kipkelion East",
+                    "Kipkelion West",
+                    "Ainamoi",
+                    "Bureti",
+                    "Belgut",
+                    "Sigowet/Soin",
                     "Other"
                 ]
             },
             {
                 "name": "Kiambu",
                 "localgovts": [
+                    "Gatundu South",
+                    "Gatundu North",
+                    "Juja",
+                    "Thika Town",
+                    "Ruiru",
+                    "Githunguri",
+                    "Kiambu",
+                    "Kiambaa",
+                    "Kabete",
+                    "Kikuyu",
+                    "Limuru",
+                    "Lari",
                     "Other"
                 ]
             },
             {
                 "name": "Kilifi",
                 "localgovts": [
+                    "Kilifi North",
+                    "Kilifi South",
+                    "Kaloleni",
+                    "Rabai",
+                    "Ganze",
+                    "Malindi",
+                    "Magarini",
                     "Other"
                 ]
             },
             {
                 "name": "Kirinyaga",
                 "localgovts": [
+                    "Mwea",
+                    "Gichugu",
+                    "Ndia",
+                    "Kirinyaga Central",
                     "Other"
                 ]
             },
             {
                 "name": "Kisii",
                 "localgovts": [
+                    "Bonchari",
+                    "South Mugirango",
+                    "Bomachoge Borabu",
+                    "Bobasi",
+                    "Bomachoge Chache",
+                    "Nyaribari Masaba",
+                    "Nyaribari Chache",
+                    "Kitutu Chache North",
+                    "Kitutu Chache South",
                     "Other"
                 ]
             },
             {
                 "name": "Kisumu",
                 "localgovts": [
+                    "Kisumu East",
+                    "Kisumu West",
+                    "Kisumu Central",
+                    "Seme",
+                    "Nyando",
+                    "Muhoroni",
+                    "Nyakach",
                     "Other"
                 ]
             },
             {
                 "name": "Kitui",
                 "localgovts": [
+                    "Mwingi North",
+                    "Mwingi West",
+                    "Mwingi Central",
+                    "Kitui West",
+                    "Kitui Rural",
+                    "Kitui Central",
+                    "Kitui East",
+                    "Kitui South",
                     "Other"
                 ]
             },
             {
                 "name": "Kwale",
                 "localgovts": [
+                    "Msambweni",
+                    "Lungalunga",
+                    "Matuga",
+                    "Kinango",
                     "Other"
                 ]
             },
             {
                 "name": "Laikipia",
                 "localgovts": [
+                    "Laikipia West",
+                    "Laikipia East",
+                    "Laikipia North",
                     "Other"
                 ]
             },
             {
                 "name": "Lamu",
                 "localgovts": [
+                    "Lamu East",
+                    "Lamu West",
                     "Other"
                 ]
             },
             {
                 "name": "Machakos",
                 "localgovts": [
+                    "Machakos Town",
+                    "Kathiani",
+                    "Mavoko",
+                    "Masinga",
+                    "Yatta",
+                    "Kangundo",
+                    "Matungulu",
+                    "Mwala",
                     "Other"
                 ]
             },
             {
                 "name": "Makueni",
                 "localgovts": [
+                    "Makueni",
+                    "Kibwezi West",
+                    "Kibwezi East",
+                    "Kilome",
+                    "Mbooni",
+                    "Kaiti",
                     "Other"
                 ]
             },
             {
                 "name": "Mandera",
                 "localgovts": [
+                    "Mandera West",
+                    "Banissa",
+                    "Mandera North",
+                    "Mandera South",
+                    "Mandera East",
+                    "Lafey",
                     "Other"
                 ]
             },
             {
                 "name": "Marsabit",
                 "localgovts": [
+                    "Moyale",
+                    "North Horr",
+                    "Saku",
+                    "Laisamis",
                     "Other"
                 ]
             },
             {
                 "name": "Meru",
                 "localgovts": [
+                    "Igembe South",
+                    "Igembe Central",
+                    "Igembe North",
+                    "Tigania West",
+                    "Tigania East",
+                    "North Imenti",
+                    "Buuri",
+                    "Central Imenti",
+                    "South Imenti",
                     "Other"
                 ]
             },
             {
                 "name": "Migori",
                 "localgovts": [
+                    "Rongo",
+                    "Awendo",
+                    "Suna East",
+                    "Suna West",
+                    "Uriri",
+                    "Nyatike",
+                    "Kuria West",
+                    "Kuria East",
+                    "Ntimaru",
+                    "Mabera",
                     "Other"
                 ]
             },
             {
                 "name": "Mombasa",
                 "localgovts": [
+                    "Changamwe",
+                    "Jomba",
+                    "Kisauni",
+                    "Nyali",
+                    "Likoni",
+                    "Mvita",
                     "Other"
                 ]
             },
             {
                 "name": "Murang'a",
                 "localgovts": [
+                    "Kangema",
+                    "Mathioya",
+                    "Kiharu",
+                    "Kigumo",
+                    "Maragua",
+                    "Kandara",
+                    "Gatanga",
                     "Other"
                 ]
             },
@@ -13522,48 +14406,95 @@
             {
                 "name": "Nakuru",
                 "localgovts": [
+                    "Subukia",
+                    "Rongai",
+                    "Bahati",
+                    "Nakuru Town West",
+                    "Nakuru Town East",
+                    "Njoro",
+                    "Molo",
+                    "Gilgil",
+                    "Naivasha",
+                    "Kuresoi South",
+                    "Kuresoi North",
                     "Other"
                 ]
             },
             {
                 "name": "Nandi",
                 "localgovts": [
+                    "Tinderet",
+                    "Aldai",
+                    "Nandi Hills",
+                    "Chesumei",
+                    "Emgwen",
+                    "Mosop",
                     "Other"
                 ]
             },
             {
                 "name": "Narok",
                 "localgovts": [
+                    "Kilgoris",
+                    "Emurua Dikirr",
+                    "Narok North",
+                    "Narok East",
+                    "Narok South",
+                    "Narok West",
                     "Other"
                 ]
             },
             {
                 "name": "Nyamira",
                 "localgovts": [
+                    "Kitutu Masaba",
+                    "West Mugirango",
+                    "North Mugirango",
+                    "Borabu",
                     "Other"
                 ]
             },
             {
                 "name": "Nyandarua",
                 "localgovts": [
+                    "Kinangop",
+                    "Kipipiri",
+                    "Ol Kalou",
+                    "Ol Jorok",
+                    "Ndaragwa",
                     "Other"
                 ]
             },
             {
                 "name": "Nyeri",
                 "localgovts": [
+                    "Tetu",
+                    "Kieni",
+                    "Mathira",
+                    "Othaya",
+                    "Mukurwe-ini",
+                    "Nyeri Town",
                     "Other"
                 ]
             },
             {
                 "name": "Samburu",
                 "localgovts": [
+                    "Samburu West",
+                    "Samburu North",
+                    "Samburu East",
                     "Other"
                 ]
             },
             {
                 "name": "Siaya",
                 "localgovts": [
+                    "Ugenya",
+                    "Ugunja",
+                    "Alego Usonga",
+                    "Gem",
+                    "Bondo",
+                    "Rarieda",
                     "Other"
                 ]
             },
@@ -13576,48 +14507,86 @@
             {
                 "name": "Tana River",
                 "localgovts": [
+                    "Garsen",
+                    "Galole",
+                    "Bura",
                     "Other"
                 ]
             },
             {
                 "name": "Tharaka-Nithi",
                 "localgovts": [
+                    "Tharaka",
+                    "Chuka/Igambang'ombe",
+                    "Maara",
                     "Other"
                 ]
             },
             {
                 "name": "Trans Nzoia",
                 "localgovts": [
+                    "Kwanza",
+                    "Endebess",
+                    "Saboti",
+                    "Kiminini",
+                    "Cherangany",
                     "Other"
                 ]
             },
             {
                 "name": "Turkana",
                 "localgovts": [
+                    "Turkana North",
+                    "Turkana West",
+                    "Turkana Central",
+                    "Loima",
+                    "Turkana South",
+                    "Turkana East",
                     "Other"
                 ]
             },
             {
                 "name": "Uasin Gishu",
                 "localgovts": [
+                    "Soy",
+                    "Turbo",
+                    "Moiben",
+                    "Ainabkoi",
+                    "Kapseret",
+                    "Kesses",
                     "Other"
                 ]
             },
             {
                 "name": "Vihiga",
                 "localgovts": [
+                    "Vihiga",
+                    "Sabatia",
+                    "Hamisi",
+                    "Luanda",
+                    "Emuhaya",
                     "Other"
                 ]
             },
             {
                 "name": "Wajir",
                 "localgovts": [
+                    "Wajir North",
+                    "Wajir East",
+                    "Tarbaj",
+                    "Wajir West",
+                    "Eldas",
+                    "Wajir South",
                     "Other"
                 ]
             },
             {
                 "name": "West Pokot",
                 "localgovts": [
+                    "Sigor",
+                    "Kacheliba",
+                    "Kapenguria",
+                    "West Pokot",
                     "Other"
                 ]
             }
@@ -23644,66 +24613,101 @@
             {
                 "name": "Dakar",
                 "localgovts": [
+                    "Dakar",
+                    "Guédiawaye",
+                    "Pikine",
+                    "Rufisque",
                     "Other"
                 ]
             },
             {
                 "name": "Diourbel Region",
                 "localgovts": [
+                    "Diourbel",
+                    "Bambey",
+                    "Mbacké",
                     "Other"
                 ]
             },
             {
                 "name": "Fatick",
                 "localgovts": [
+                    "Fatick",
+                    "Foundiougne",
+                    "Gossas",
                     "Other"
                 ]
             },
             {
                 "name": "Kaffrine",
                 "localgovts": [
+                    "Kaffrine",
+                    "Birkelane",
+                    "Koungheul",
+                    "Malem-Hodar",
                     "Other"
                 ]
             },
             {
                 "name": "Kaolack",
                 "localgovts": [
+                    "Kaolack",
+                    "Guinguinéo",
+                    "Nioro du Rip",
                     "Other"
                 ]
             },
             {
                 "name": "Kédougou",
                 "localgovts": [
+                    "Kédougou",
+                    "Salémata",
+                    "Saraya",
                     "Other"
                 ]
             },
             {
                 "name": "Kolda",
                 "localgovts": [
+                    "Kolda",
+                    "Médina Yoro Foulah",
+                    "Vélingara",
                     "Other"
                 ]
             },
             {
                 "name": "Louga",
                 "localgovts": [
+                    "Louga",
+                    "Kébémer",
+                    "Linguère",
                     "Other"
                 ]
             },
             {
                 "name": "Matam",
                 "localgovts": [
+                    "Matam",
+                    "Kanel",
+                    "Ranérou",
                     "Other"
                 ]
             },
             {
                 "name": "Saint-Louis",
                 "localgovts": [
+                    "Saint-Louis",
+                    "Dagana",
+                    "Podor",
                     "Other"
                 ]
             },
             {
                 "name": "Sédhiou",
                 "localgovts": [
+                    "Sédhiou",
+                    "Bounkiling",
+                    "Goudomp",
                     "Other"
                 ]
             },
@@ -23722,6 +24726,9 @@
             {
                 "name": "Ziguinchor",
                 "localgovts": [
+                    "Ziguinchor",
+                    "Bignona",
+                    "Oussouye",
                     "Other"
                 ]
             }
